@@ -1,0 +1,9 @@
+.login-button {
+    font-family: "Lora-Italic";
+    font-weight: 400;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid blue;
+    width: 6rem;
+    height: 3rem;
+}
