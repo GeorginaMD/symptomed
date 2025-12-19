@@ -3,6 +3,8 @@ import "./styles/reset.css"
 import "./App.css"
 import Navbar from "./components/Navbar"
 import HomeSection from "./pages/home-page/HomeSection"
+import OpenFdaCategoriesSection from "./pages/open-fda-categories/OpenFdaCategoriesSection"
+import FdaDrugsSection from "./pages/open-fda-drugs/FdaDrugsSection"
 
 function Layout() {
   return (
@@ -23,9 +25,16 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        //index: true, 
-        path: "home-page", 
+        index: true, 
         element: <HomeSection />
+      },
+      {
+        path: "open-fda-categories",
+        element: <OpenFdaCategoriesSection />
+      },
+      {
+        path: "open-fda-drugs",
+        element: <FdaDrugsSection />
       }
     ]
   }
