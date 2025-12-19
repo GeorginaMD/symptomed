@@ -15,7 +15,9 @@ export default function Navbar() {
                     <RegisterPageView />
                 </ul>   
         </nav>
-        
+        <section className="home-section">
+            
+        </section>
     </>
     )
 }
