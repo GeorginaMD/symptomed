@@ -1,9 +1,10 @@
 import "./DemoPageView.css"
+import { Link } from "react-router"
 
 export default function DemoPageView() {
     return (
         <>
-            <li><a className="demo-button" href="">Demo</a></li>
+            <Link to="/demo-login-page" className="link">Demo Login</Link>
         </>
         
     )

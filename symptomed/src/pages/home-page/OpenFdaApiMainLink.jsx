@@ -1,6 +1,5 @@
 import "./OpenFdaApiMainLink.css"
 import { Link } from "react-router";
-import FdaCategoriesSection from "../open-fda-categories/OpenFdaCategoriesSection";
 
 export default function OpenFdaApiMainLink() {
     return (

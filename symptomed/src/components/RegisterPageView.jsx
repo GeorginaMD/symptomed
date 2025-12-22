@@ -1,9 +1,10 @@
 import "./RegisterPageView.css"
+import { Link } from "react-router"
 
 export default function RegisterPageView() {
     return (
         <>
-            <li><a className="register-button" href="">Register</a></li>
+            <Link to="/register-page" className="link">Register</Link>
         </>
     )
 }

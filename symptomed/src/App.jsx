@@ -5,6 +5,14 @@ import Navbar from "./components/Navbar"
 import HomeSection from "./pages/home-page/HomeSection"
 import OpenFdaCategoriesSection from "./pages/open-fda-categories/OpenFdaCategoriesSection"
 import FdaDrugsSection from "./pages/open-fda-drugs/FdaDrugsSection"
+import SupplementsSection from "./pages/all-supplements/SupplementsSection"
+import OneSupplementSection from "./pages/one-supplement/OneSupplmentSection"
+import RegisterSection from "./pages/register-page/RegisterSection"
+import RegisterProfileSection from "./pages/user-dashboard-registration/RegisterProfileSection"
+import LoginSection from "./pages/login-page/LoginSection"
+import LoginProfileSection from "./pages/user-dashboard-login/LoginProfileSection"
+import DemoSection from "./pages/demo-page/DemoSection"
+import DemoLoginProfileSection from "./pages/user-dashboard-demo-login/DemoLoginProfileSection"
 
 function Layout() {
   return (
@@ -35,6 +43,38 @@ const router = createBrowserRouter([
       {
         path: "open-fda-drugs",
         element: <FdaDrugsSection />
+      },
+      {
+        path: "all-supplements",
+        element: <SupplementsSection />
+      },
+      {
+        path: "one-supplement",
+        element: <OneSupplementSection />
+      },
+      {
+        path: "register-page",
+        element: <RegisterSection />
+      },
+      {
+        path: "user-dashboard-registration",
+        element: <RegisterProfileSection />
+      },
+      {
+        path: "login-page",
+        element: <LoginSection />
+      },
+      {
+        path: "user-dashboard-login",
+        element: <LoginProfileSection />
+      },
+      {
+        path: "demo-login-page",
+        element: <DemoSection />
+      },
+      {
+        path: "user-dashboard-demo-login",
+        element: <DemoLoginProfileSection />
       }
     ]
   }
