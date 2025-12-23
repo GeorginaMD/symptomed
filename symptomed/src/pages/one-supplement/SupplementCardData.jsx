@@ -3,12 +3,14 @@ import "./SupplementCardData.css"
 export default function SupplementCardData() {
     return (
         <div className="supplement-card-data">
-            <h1>Vitamin X</h1>
-            <p>
-                Disease: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore, maiores natus quisquam atque mollitia.
-                Dose: 1mg.
-                Suggestions: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, unde, facere a doloribus quaerat ab placeat velit sequi vel voluptate quod quam, excepturi corporis vero molestias quae? Adipisci, labore porro!
-            </p>
+            <h1>Vitamin A</h1>
+            <ul>
+                <li>Benefits: supporting vision, skin health</li>
+                <li>Disease: night blindness, acne vulgaris</li>
+                <li>Dose: men: 900mcg, women: 700mcg</li>
+                <li>Suggestions: take with a meal that contains healthy fats, Zinc supports vitamin A absorption</li>
+            </ul>
+            
         </div>
     )
 }

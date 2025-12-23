@@ -1,0 +1,58 @@
+.home-page-wrapper  {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Oval button base styles */
+.home-page {
+    margin: 10px;
+    position: relative;
+    display: flex; 
+    width: 130px;
+    height: 52px;
+    border-radius: 52px; /* Creates oval shape */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Oval button shadow/pseudo-element */
+.home-page:before {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 130px;
+    height: 52px;
+    content: " ";
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    border-radius: 52px; /* Matches oval shape */
+    filter: blur(7px);
+    box-shadow: 8px 8px 20px #63767d,
+               -8px -8px 20px #fff;
+}
+
+/* Oval button hover effect */
+.home-page:hover:before {
+    box-shadow: 8px 8px 20px #63767d,
+               -8px -8px 20px #fff,
+               inset -8px -8px 20px #fff,
+               inset 8px 8px 20px #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+
+/* Oval button text */
+.home-page {
+    position: relative;
+    cursor: pointer;
+    color: #797979;
+    transition: scale 0.3s ease-out;
+}
+
+/* Oval button text hover effect */
+.home-page:hover {
+    scale: 0.95;
+}

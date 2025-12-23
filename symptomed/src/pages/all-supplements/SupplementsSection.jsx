@@ -1,6 +1,6 @@
 import SupplementsCard from "./SupplementsCard"
 import "./SupplementsSection.css"
-import { Link } from "react-router"
+import ButtonHomePage from "../../components/ButtonHomePage"
 
 export default function SupplementsSection() {
     return (
@@ -10,7 +10,7 @@ export default function SupplementsSection() {
             <SupplementsCard />
             <SupplementsCard />
             <br />
-            <Link to="/" className="link"> Home Page </Link>
+            <ButtonHomePage />
         </section>
     )
 }

@@ -1,12 +1,12 @@
 import "./LoginSection.css"
 import LoginForm from "./LoginForm"
-import { Link } from "react-router"
+import ButtonHomePage from "../../components/ButtonHomePage"
 
 export default function LoginSection() {
     return (
         <section className="login-section">
             <LoginForm />
-            <Link to="/" className="link">Home page</Link>
+            <ButtonHomePage />
         </section>
     )
 }

@@ -1,6 +1,6 @@
 import "./FdaDrugsSection.css"
 import FdaDrugCardData from "./FdaDrugCardData"
-import { Link } from "react-router"
+import ButtonHomePage from "../../components/ButtonHomePage"
 
 export default function FdaDrugsSection() {
     return(
@@ -10,7 +10,7 @@ export default function FdaDrugsSection() {
             <FdaDrugCardData />
             <FdaDrugCardData />
             <br />
-            <Link to="/" className="link"> Home Page </Link>
+            <ButtonHomePage />
         </section>
     )
 }

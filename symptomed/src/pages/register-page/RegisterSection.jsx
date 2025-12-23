@@ -1,12 +1,12 @@
 import "./RegisterSection.css"
 import RegisterForm from "./RegisterForm"
-import { Link } from "react-router"
+import ButtonHomePage from "../../components/ButtonHomePage"
 
 export default function RegisterSection() {
     return(
         <section className="register-section">
             <RegisterForm />
-            <Link to="/" className="link">Home page</Link>
+            <ButtonHomePage />
         </section>
     )
 }
