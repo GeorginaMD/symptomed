@@ -1,0 +1,256 @@
+{
+"status": "success",
+"data": [
+{
+"name": "A vitamin",
+"benefits": ["Supporting vision", "Skin health"],
+"disease": ["Night blindness", "Acne vulgaris"],
+"dose": ["Men: 900mcg", "Women: 700mcg"],
+"suggestions": ["Take with a meal that contains healthy fats", "Zinc supports vitamin A absorption"]
+},
+{
+"name": "Berberine",
+"benefits": ["Lower blood sugar levels", "Improve insulin sensitivity"],
+"disease": ["Type 2 diabetes", "Polycystic ovary syndrome"],
+"dose": ["900-1500 mg"],
+"suggestions": ["Divide into three doses taken before or with meals", "Potential interactions with medications for diabetes, high blood pressure, or blood clotting"]
+},
+{
+"name": "B1 vitamin",
+"benefits": ["Supports the nervous system", "Improves mood"],
+"disease": ["Beriberi", "Diabetic nerve pain"],
+"dose": ["Men: 1.2mg", "Women: 1.1mg"],
+"suggestions": ["Vitamin C-rich foods can enhance thiamine absorption", "Potential interactions with chemotherapy drugs"]
+},
+{
+"name": "B2 vitamin",
+"benefits": ["Reducing the frequency and severity of migraine headaches", "Supports eye health"],
+"disease": ["Migraine headaches", "Cataracts"],
+"dose": ["Men: 1.3mg", "Women: 1.1mg"],
+"suggestions": ["Can interact with tetracycline antibiotics", "Take with a meal that contains some fat for optimal absorption"]
+},
+{
+"name": "B3 vitamin",
+"benefits": ["Improve blood fat levels (cholesterol)", "Improves skin health by reducing inflammation"],
+"disease": ["Pellagra", "Dyslipidemia"],
+"dose": ["Men: 16mg", "Women: 14mg"],
+"suggestions": ["Taking it with food can help prevent an upset stomach", "Large doses might worsen gout"]
+},
+{
+"name": "B5 vitamin",
+"benefits": ["Support for the nervous system and brain health", "Contributes to skin and hair health"],
+"disease": ["Atopic dermatitis", "Dyslipidemia"],
+"dose": ["5mg"],
+"suggestions": ["Potential interaction with renal function", "It works well with hyaluronic acid for skin benefits"]
+},
+{
+"name": "B6 vitamin",
+"benefits": ["Healthy nervous system and brain function", "Supports heart health"],
+"disease": ["Premenstrual syndrome", "Pyridoxine-dependent epilepsy"],
+"dose": ["Men: 1.3mg", "Women: 1.3mg"],
+"suggestions": ["Take it in the morning on an empty stomach for optimal absorption", "May help alleviate symptoms of premenstrual syndrome (PMS)"]
+},
+{
+"name": "B7 vitamin",
+"benefits": ["Support hair, skin, and nail health", "Potentially alleviates symptoms like brain fog and depression"],
+"disease": ["Alopecia", "Biotin-responsive basal ganglia disease"],
+"dose": ["30mcg"],
+"suggestions": ["Can interfere with laboratory blood tests for hormones like thyroid-stimulating hormone", "Antibiotics may reduce beneficial intestinal bacteria that produce biotin"]
+},
+{
+"name": "B9 vitamin",
+"benefits": ["Vital for the formation of red blood cells and DNA", "Improve memory and thinking skills"],
+"disease": ["Celiac disease", "Crohn’s disease"],
+"dose": ["400mcg"],
+"suggestions": ["Absorbed more efficiently when consumed with a meal", "Oral contraceptives can reduce B9 levels"]
+},
+{
+"name": "B12 vitamin",
+"benefits": ["Creating healthy red blood cells", "Maintaining the health of your nervous system"],
+"disease": ["Megaloblastic anemia", "Pernicious anemia"],
+"dose": ["2.4mcg"],
+"suggestions": ["Take in the morning, ideally on an empty stomach", "Avoid taking B12 close to bedtime, as it may interfere with melatonin production"]
+},
+{
+"name": "Caffeine",
+"benefits": ["Can improve mood and brain function", "May aid in weight management by stimulating metabolism and increasing fat burning"],
+"disease": ["Type 2 diabetes", "Parkinson’s disease"], 
+"dose": ["400mg"],
+"suggestions": ["May interact with psychiatric medications", "Can reduce the effectiveness of certain medications used for hypothyroidism and osteoporosis drugs"]
+},
+{
+"name": "Calcium",
+"benefits": ["Supporting bone and teeth health", "Help lower the risk of developing high blood pressure"],
+"disease": ["Osteoporosis", "Preeclampsia"],
+"dose": ["1000mg"],
+"suggestions": ["Split larger daily doses into smaller doses throughout the day", "May interact with certain blood pressure medications"]
+},
+{
+"name": "Chondroitin",
+"benefits": ["Improve joint function", "Preventing cartilage breakdown"],
+"disease": ["Osteoarthritis"],
+"dose": ["800-1200 mg"],
+"suggestions": ["Take with a meal to reduce the risk of stomach discomfort", "May worsen asthma symptoms in some individuals"]
+},
+{
+"name": "Citrulline",
+"benefits": ["Improved exercise performance", "Reduced blood pressure"],
+"disease": ["Celiac disease", "Sickle cell disease"],
+"dose": ["3-6 gr"],
+"suggestions": ["Take it about an hour before exercise", "Interaction with medications that affect blood pressure or blood flow"]
+},
+{
+"name": "Coenzyme Q10",
+"benefits": ["Improve heart health", "Reducing fasting glucose and insulin levels"],
+"disease": ["Heart failure and angina", "Fibromyalgia"],
+"dose": ["100-200 mg"],
+"suggestions": ["Take with a meal containing healthy fats to maximize absorption", "Statin drugs, used for cholesterol, can deplete CoQ10 levels in the body"]
+},
+{
+"name": "Creatine",
+"benefits": ["Enhanced muscle growth and exercise performance", "Improves memory, attention and information processing speed"],
+"disease": ["Muscular dystrophy", "Sarcopenia"],
+"dose": ["3-5 gr"],
+"suggestions": ["Taking it close to your workout—either before or after, with a meal", "Chronic caffeine consumption may reduce some of creatine’s benefits"]
+},
+{
+"name": "C vitamin",
+"benefits": ["Enhancing iron absorption", "Promoting collagen production for skin health"],
+"disease": ["Scurvy", "Iron-deficiency anemia"],
+"dose": ["Men: 90mg", "Women: 75mg"],
+"suggestions": ["Take first thing in the morning, 30 to 45 minutes before a meal, or two hours after eating", "Might diminish the beneficial effects of niacin when taken together"]
+},
+{
+"name": "D vitamin",
+"benefits": ["Crucial for bone health", "Improved muscle function and strength"],
+"disease": ["Osteoporosis", "Rickets"],
+"dose": ["600 IU"],
+"suggestions": [" Take with a meal that contains healthy fats", "Fat tissue can sequester vitamin D, lowering its serum levels"]
+},
+{
+"name": "E vitamin",
+"benefits": ["Support for the immune system", "Maintain skin hydration"],
+"disease": ["Nonalcoholic fatty liver disease", "Age-related macular degeneration"],
+"dose": ["15mg"],
+"suggestions": ["Take with a meal containing fat", "Acts as a blood thinner, inhibits anticoagulants and can increase the risk of bleeding"]
+},
+{
+"name": "Ginkgo",
+"benefits": ["Improve cognitive function", "Improve blood flow to the brain, eyes, ears, and legs"],
+"disease": ["Dementia", "Raynaud's disease"],
+"dose": ["80mg"],
+"suggestions": ["Take it in the morning", "May interact with medications used to treat seizures"]
+},
+{
+"name": "Glucosamine",
+"benefits": ["Supporting joint health", "Antioxidant effects that improve eye health"],
+"disease": ["Osteoarthritis", "Rheumatoid arthritis"],
+"dose": ["1500mg"],
+"suggestions": ["Take it consistently, with meals", "May interfere with the effectiveness of certain chemotherapy drugs"]
+},
+{
+"name": "Glutamine",
+"benefits": ["Muscle recovery", "Gut health"],
+"disease": ["Sickle cell disease", "Peripheral neuropathy"],
+"dose": ["5-10gr"],
+"suggestions": ["Take on an empty stomach", "Not recommended for individuals with end-stage liver or kidney diseases, cancer or bipolar disorder"]
+},
+{
+"name": "Iodine",
+"benefits": ["Maintain thyroid function", "Has antiseptic properties"],
+"disease": ["Goiter", "Hypothyroidism"],
+"dose": ["150mcg"],
+"suggestions": ["Take with food to minimize potential stomach upset", "Can worsen thyroid disorders such as hypothyroidism, goiter, or thyroid tumors"]
+},
+{
+"name": "Iron",
+"benefits": ["Enhancement of hemoglobin production", "Reduce fatigue"],
+"disease": ["Anemia", "Restless legs syndrome"],
+"dose": ["Men: 8mg", "Women: 18mg"],
+"suggestions": ["In the morning on an empty stomach", "Can interact with drugs that reduce stomach acid"]
+},
+{
+"name": "K vitamin",
+"benefits": ["Supporting blood clotting", "Improves bone strength"],
+"disease": ["Celiac disease", "Cystic fibrosis"],
+"dose": ["Men: 120mcg", "Women: 90mcg"],
+"suggestions": ["Take with a meal containing fat to maximize absorption", "Can interact with antacids, antibiotics, aspirin, drugs for cancer and seizures"]
+},
+{
+"name": "Magnesium",
+"benefits": ["Supports bone strength", "Supports muscle function"],
+"disease": ["Arrhythmias", "Constipation"],
+"dose": ["Men: 420mg", "Women: 320mg"],
+"suggestions": ["Taking it with food is advised for most types to reduce the risk of side effects like diarrhea", "High doses of zinc can hinder magnesium absorption"]
+},
+{
+"name": "Melatonin",
+"benefits": ["Support sleep regulation", "Reduce anxiety before surgery"],
+"disease": ["Insomnia", "Alzheimer's disease"],
+"dose": ["2-5 mg"],
+"suggestions": ["Take 1 to 2 hours before bedtime", "May lower blood glucose levels when taken with diabetes medications"]
+},
+{
+"name": "NAC",
+"benefits": ["Alleviates symptoms of depression, anxiety", "Improve sperm quality and motility and enhance ovulation"],
+"disease": ["Pneumonia", "Asthenoteratozoospermia"],
+"dose": ["600-1800 mg"],
+"suggestions": ["Taken in the morning on an empty stomach may maximize glutathione production", "Taken in the evening can be advantageous for promoting relaxation, supporting overnight recovery"]
+},
+{
+"name": "Omega-3",
+"benefits": ["Help lower triglyceride levels", "Support cognitive function and improve memory"],
+"disease": ["Coronary heart disease", "Ischemic stroke"],
+"dose": ["500-2000 mg"],
+"suggestions": ["Take with a meal containing dietary fat, as this improves absorption", "Have antithrombotic effect, which can increase the risk of bleeding"]
+},
+{
+"name": "Omega-6",
+"benefits": ["Help lower harmful LDL cholesterol", "Can reduce the risk of heart attacks"],
+"disease": ["Not recommended for any specific disease"],
+"dose": ["Men: 17gr", "Women: 12gr"],
+"suggestions": ["Just before or after a meal such as lunch or dinner, to improve nutrient absorption", "May interact with drugs like aspirin, ibuprofen"]
+},
+{
+"name": "Potassium",
+"benefits": ["Supports nerve signal transmission and muscle contraction", "Supports healthy blood pressure"],
+"disease": ["Hypokalemia", "Arrhythmia"],
+"dose": ["Men: 3400mg", "Women: 2600mg"],
+"suggestions": ["Take with meals or shortly after eating, to minimize stomach irritation", "Medications that can cause low potassium include diuretics, insulin (especially in high doses), antimicrobials (penicillin)"]
+},
+{
+"name": "Quercetin",
+"benefits": ["Has antioxidant and anti-inflammatory properties", "Prevents the oxidation of lipids that contribute to plaque buildup in arteries"],
+"disease": ["Atherosclerosis", "Prostatitis"],
+"dose": ["500-1000 mg"],
+"suggestions": ["Take with a meal containing healthy fats, ideally breakfast or dinner", "May interact with medications used for diabetes (can lower blood sugar levels) and high blood pressure"]
+},
+{
+"name": "Resveratrol",
+"benefits": ["Protects against cardiovascular disease", "Improves insulin sensitivity and lowers blood glucose"],
+"disease": ["Cardiovascular disease", "Diabetes"],
+"dose": ["250-1500 mg"],
+"suggestions": ["Take in the evening support sleep quality and cellular repair", "Has mild estrogen-like effects, and may be of concern for individuals with hormone-sensitive conditions, including certain cancers"]
+},
+{
+"name": "Selenium",
+"benefits": ["Supports thyroid health", "Boosts the immune system"],
+"disease": ["Keshan disease", "Autoimmune thyroiditis"],
+"dose": ["55mcg"],
+"suggestions": ["Splitting a higher dose between morning and evening can help maintain steady levels", "Can interact with immunosuppressants, possibly reducing their effectiveness"]
+},
+{
+"name": "Turmeric",
+"benefits": ["Has anti-inflammatory and antioxidant properties", "Can aid in weight management for people with diabetes"],
+"disease": ["Osteoarthritis", "Rheumatoid arthritis"],
+"dose": ["500-2000 mg"],
+"suggestions": ["Turmeric's active compound, curcumin, is fat-soluble and poorly absorbed on an empty stomach, so take with meal that contains healthy fats","Can interact with a wide range of medications, those affecting blood clotting, blood sugar, cancer treatment, and liver metabolism"]
+},
+{
+"name": "Zinc",
+"benefits": ["Supporting immune health", "Maintaining eye health"],
+"disease": ["Wilson disease", "Age-related macular degeneration"],
+"dose": ["Men: 11mg", "Women: 8mg"],
+"suggestions": ["Take on an empty stomach, either one hour before a meal or two hours after eating", "Can interacts with several classes of antibiotics, reducing the effectiveness"]
+}
+]}
