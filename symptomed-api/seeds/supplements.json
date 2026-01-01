@@ -3,6 +3,7 @@
 "data": [
 {
 "name": "A vitamin",
+"image": "",
 "benefits": ["Supporting vision", "Skin health"],
 "disease": ["Night blindness", "Acne vulgaris"],
 "dose": ["Men: 900mcg", "Women: 700mcg"],
@@ -10,6 +11,8 @@
 },
 {
 "name": "Berberine",
+"image": "/symptomed/public/images/supplements/Berberine.webp",
+"slug": "berberine",
 "benefits": ["Lower blood sugar levels", "Improve insulin sensitivity"],
 "disease": ["Type 2 diabetes", "Polycystic ovary syndrome"],
 "dose": ["900-1500 mg"],
@@ -73,6 +76,8 @@
 },
 {
 "name": "Caffeine",
+"image": "/symptomed/public/images/supplements/Caffeine.webp",
+"slug": "caffeine",
 "benefits": ["Can improve mood and brain function", "May aid in weight management by stimulating metabolism and increasing fat burning"],
 "disease": ["Type 2 diabetes", "Parkinson’s disease"], 
 "dose": ["400mg"],
@@ -136,6 +141,8 @@
 },
 {
 "name": "Ginkgo",
+"image": "/symptomed/public/images/supplements/Ginkgo.webp",
+"slug": "ginkgo",
 "benefits": ["Improve cognitive function", "Improve blood flow to the brain, eyes, ears, and legs"],
 "disease": ["Dementia", "Raynaud's disease"],
 "dose": ["80mg"],
@@ -227,6 +234,8 @@
 },
 {
 "name": "Resveratrol",
+"image": "/symptomed/public/images/supplements/Resveratrol.webp",
+"slug": "resveratrol",
 "benefits": ["Protects against cardiovascular disease", "Improves insulin sensitivity and lowers blood glucose"],
 "disease": ["Cardiovascular disease", "Diabetes"],
 "dose": ["250-1500 mg"],
@@ -241,6 +250,8 @@
 },
 {
 "name": "Turmeric",
+"image": "/symptomed/public/images/supplements/Turmeric.webp",
+"slug": "turmeric",
 "benefits": ["Has anti-inflammatory and antioxidant properties", "Can aid in weight management for people with diabetes"],
 "disease": ["Osteoarthritis", "Rheumatoid arthritis"],
 "dose": ["500-2000 mg"],
