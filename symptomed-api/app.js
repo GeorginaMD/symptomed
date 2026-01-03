@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import supplementsRoutes from "./routes/supplements.js";
 
 dotenv.config();
 
@@ -23,6 +24,8 @@ mongoose.connection.on("error", (err) => {
 app.get("/", (req, res) => {
   res.send("Hello Symptomed Api!");
 });
+
+app.use("/api/supplements", supplementsRoutes);
 
 //start the express server
 app.listen(port, () => {
