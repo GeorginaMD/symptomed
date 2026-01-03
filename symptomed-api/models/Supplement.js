@@ -4,6 +4,8 @@ const { Schema, model } = mongoose;
 
 const supplementSchema = new Schema({
   name: { type: String, required: true },
+  image: { type: String },
+  slug: { type: String },
   benefits: [String],
   disease: [String],
   dose: [String],
