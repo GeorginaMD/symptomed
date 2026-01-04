@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         element: <SupplementsSection />
       },
       {
-        path: "one-supplement",
+        path: "one-supplement/:slug",
         element: <OneSupplementSection />
       },
       {

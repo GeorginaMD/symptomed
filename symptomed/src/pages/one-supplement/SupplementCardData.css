@@ -3,3 +3,9 @@
     text-align: center;
     
 }
+
+.supplement-image {
+    margin: auto;
+    width: 200px;
+    height: 260px;
+}
