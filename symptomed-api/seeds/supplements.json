@@ -93,6 +93,7 @@
 },
 {
 "name": "Calcium",
+"image": "/images/supplements/Calcium.webp",
 "slug": "calcium",
 "benefits": ["Supporting bone and teeth health", "Help lower the risk of developing high blood pressure"],
 "disease": ["Osteoporosis", "Preeclampsia"],
@@ -101,6 +102,7 @@
 },
 {
 "name": "Chondroitin",
+"image": "/images/supplements/Chondriotin.webp",
 "slug": "chondriotin",
 "benefits": ["Improve joint function", "Preventing cartilage breakdown"],
 "disease": ["Osteoarthritis"],
@@ -109,6 +111,7 @@
 },
 {
 "name": "Citrulline",
+"image": "/images/supplements/Citruline.webp",
 "slug": "citrulline",
 "benefits": ["Improved exercise performance", "Reduced blood pressure"],
 "disease": ["Celiac disease", "Sickle cell disease"],
@@ -117,6 +120,7 @@
 },
 {
 "name": "Coenzyme Q10",
+"image": "/images/supplements/Coenzyme-Q10.webp",
 "slug": "coenzyme-q10",
 "benefits": ["Improve heart health", "Reducing fasting glucose and insulin levels"],
 "disease": ["Heart failure and angina", "Fibromyalgia"],
@@ -125,6 +129,7 @@
 },
 {
 "name": "Creatine",
+"image": "/images/supplements/Creatine.webp",
 "slug": "creatine",
 "benefits": ["Enhanced muscle growth and exercise performance", "Improves memory, attention and information processing speed"],
 "disease": ["Muscular dystrophy", "Sarcopenia"],
@@ -166,6 +171,7 @@
 },
 {
 "name": "Glucosamine",
+"image": "/images/supplements/Glucosamine.webp",
 "slug": "glucosamine",
 "benefits": ["Supporting joint health", "Antioxidant effects that improve eye health"],
 "disease": ["Osteoarthritis", "Rheumatoid arthritis"],
@@ -174,6 +180,7 @@
 },
 {
 "name": "Glutamine",
+"image": "/images/supplements/Glutamine.webp",
 "slug": "glutamine",
 "benefits": ["Muscle recovery", "Gut health"],
 "disease": ["Sickle cell disease", "Peripheral neuropathy"],
@@ -182,6 +189,7 @@
 },
 {
 "name": "Iodine",
+"image": "/images/supplements/Iodine.webp",
 "slug": "iodine",
 "benefits": ["Maintain thyroid function", "Has antiseptic properties"],
 "disease": ["Goiter", "Hypothyroidism"],
@@ -190,6 +198,7 @@
 },
 {
 "name": "Iron",
+"image": "/images/supplements/Iron.webp",
 "slug": "iron",
 "benefits": ["Enhancement of hemoglobin production", "Reduce fatigue"],
 "disease": ["Anemia", "Restless legs syndrome"],
@@ -214,6 +223,7 @@
 },
 {
 "name": "Melatonin",
+"image": "/images/supplements/Melatonin.webp",
 "slug": "melatonin",
 "benefits": ["Support sleep regulation", "Reduce anxiety before surgery"],
 "disease": ["Insomnia", "Alzheimer's disease"],
@@ -222,6 +232,7 @@
 },
 {
 "name": "NAC",
+"image": "/images/supplements/NAC.webp",
 "slug": "nac",
 "benefits": ["Alleviates symptoms of depression, anxiety", "Improve sperm quality and motility and enhance ovulation"],
 "disease": ["Pneumonia", "Asthenoteratozoospermia"],
@@ -254,6 +265,7 @@
 },
 {
 "name": "Quercetin",
+"image": "/images/supplements/Quercetin.webp",
 "slug": "quercetin",
 "benefits": ["Has antioxidant and anti-inflammatory properties", "Prevents the oxidation of lipids that contribute to plaque buildup in arteries"],
 "disease": ["Atherosclerosis", "Prostatitis"],

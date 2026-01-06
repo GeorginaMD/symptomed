@@ -18,7 +18,7 @@ mongoose.connection.on("connected", () => {
   console.log(mongoose.connection.readyState);
 });
 mongoose.connection.on("error", (err) => {
-  logError(err);
+  console.log(err);
 });
 
 app.get("/", (req, res) => {
