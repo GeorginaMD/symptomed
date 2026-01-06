@@ -1,3 +1,11 @@
 .supplements-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     text-align: center;
+}
+
+.supplements-section::-webkit-scrollbar {
+  display: none;
 }
