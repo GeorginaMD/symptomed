@@ -2,10 +2,11 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     text-align: center;
 }
 
-.supplements-section::-webkit-scrollbar {
+/* .supplements-section::-webkit-scrollbar {
   display: none;
-}
+} */
