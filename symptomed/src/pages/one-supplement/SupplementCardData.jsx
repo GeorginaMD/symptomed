@@ -3,7 +3,8 @@ import "./SupplementCardData.css"
 export default function SupplementCardData() {
     return (
         <div className="supplement-card-data">
-            <h1>Vitamin A</h1>
+            <img src={supplement.image} alt={supplement.name} className="supplement-image"/>
+            <h1>{supplement.name}</h1>
             <ul>
                 <li>Benefits: supporting vision, skin health</li>
                 <li>Disease: night blindness, acne vulgaris</li>
