@@ -6,7 +6,7 @@ export default function SupplementCardData({ supplement }) {
 
     return (
         <div className="supplement-card-data">
-            <img src={supplement.image} /* alt={supplement.name} */ className="supplement-image"/>
+            <img src={supplement.image} alt={supplement.name} className="supplement-image"/>
             <h1>{supplement.name}</h1>
             <ul>
                 <li>Benefits: {supplement.benefits.join(", ")}</li>

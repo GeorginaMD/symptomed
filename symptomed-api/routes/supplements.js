@@ -9,9 +9,13 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:slug", async (req, res) => {
-  const supplement = await Supplement.findOne({ slug: req.params.slug });
-  if (!supplement) return res.status(404).json({ error: "Not Found!" });
-  res.json(supplement);
+  try {
+    const supplement = await Supplement.findOne({ slug: req.params.slug });
+    if (!supplement) return res.status(404).json({ error: "Not Found!" });
+    res.json(supplement);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 export default router;
