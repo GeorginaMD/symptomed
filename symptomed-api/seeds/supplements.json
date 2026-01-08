@@ -215,6 +215,7 @@
 },
 {
 "name": "Magnesium",
+"image": "/images/supplements/Magnesium.webp",
 "slug": "magnesium",
 "benefits": ["Supports bone strength", "Supports muscle function"],
 "disease": ["Arrhythmias", "Constipation"],
@@ -257,6 +258,7 @@
 },
 {
 "name": "Potassium",
+"image": "/images/supplements/Potassium.webp",
 "slug": "potassium",
 "benefits": ["Supports nerve signal transmission and muscle contraction", "Supports healthy blood pressure"],
 "disease": ["Hypokalemia", "Arrhythmia"],
@@ -283,6 +285,7 @@
 },
 {
 "name": "Selenium",
+"image": "/images/supplements/Selenium.webp",
 "slug": "selenium",
 "benefits": ["Supports thyroid health", "Boosts the immune system"],
 "disease": ["Keshan disease", "Autoimmune thyroiditis"],
@@ -300,6 +303,7 @@
 },
 {
 "name": "Zinc",
+"image": "/images/supplements/Zinc.webp",
 "slug": "zinc",
 "benefits": ["Supporting immune health", "Maintaining eye health"],
 "disease": ["Wilson disease", "Age-related macular degeneration"],
