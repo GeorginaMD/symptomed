@@ -5,8 +5,7 @@ import "./Navbar.css"
 
 export default function Navbar() {
     return (
-    <>
-        
+    <div>
         <nav className="Navbar">
             <strong className="h1">SymptoMed</strong>
                 <ul className="nav-ul">
@@ -15,9 +14,6 @@ export default function Navbar() {
                     <RegisterPageView />
                 </ul>   
         </nav>
-        <section className="home-section">
-            
-        </section>
-    </>
+    </div>
     )
 }
