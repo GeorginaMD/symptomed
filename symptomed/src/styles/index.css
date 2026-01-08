@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "ZenLoop-Italic", sans-serif;
+  font-family: "ZenLoop-Italic";
   src: url("src/fonts/ZenLoop-Italic.ttf") format("truetype-variations");
   font-display: swap;  
 }
 @font-face {
-  font-family: "ZenLoop-Regular", sans-serif;
+  font-family: "ZenLoop-Regular";
   src: url("src/fonts/ZenLoop-Regular.ttf") format("truetype-variations");
   font-display: swap;
 }
