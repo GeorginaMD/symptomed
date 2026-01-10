@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "ZenLoop-Italic", sans-serif;
+  font-family: "ZenLoop-Italic";
   src: url("src/fonts/ZenLoop-Italic.ttf") format("truetype-variations");
   font-display: swap;  
 }
 @font-face {
-  font-family: "ZenLoop-Regular", sans-serif;
+  font-family: "ZenLoop-Regular";
   src: url("src/fonts/ZenLoop-Regular.ttf") format("truetype-variations");
   font-display: swap;
 }
@@ -34,7 +34,6 @@
   /*background-color: #F0EFEB;  PANETONE 2026*/
   color: #10161d;
   
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -50,18 +49,8 @@
 }
 
 
-/* @media (min-width: 30em) and (max-width: 50em)
-@media (30em <= width <= 50em) */
 
-/* @media screen and (min-width: 22rem) {}
 
-@media screen and ( 23rem <= width <= 40rem ) {}
-
-@media screen and ( 41rem <= width <= 48rem ) {}
-
-@media screen and ( 49rem <= width <= 64rem ) {}
-
-@media screen and ( 65rem <= width <=80rem  ) {} */
 
 
 

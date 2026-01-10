@@ -1,58 +1,50 @@
 .home-page-wrapper  {
     display: flex;
     flex-direction: column;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Oval button base styles */
+/* Button and text styles */
 .home-page {
-    margin: 10px;
+    margin: 0.6em;
     position: relative;
     display: flex; 
-    width: 130px;
-    height: 52px;
-    border-radius: 52px; /* Creates oval shape */
+    width: 4.1em;
+    height: 1.50em;
+    border-radius: 1.65em; /* Creates oval shape */
     align-items: center;
     justify-content: center;
-}
-
-/* Oval button shadow/pseudo-element */
-.home-page:before {
-    position: absolute;
-    inset: 0;
-    display: block;
-    width: 130px;
-    height: 52px;
-    content: " ";
-    cursor: pointer;
-    transition: 0.3s ease-out;
-    border-radius: 52px; /* Matches oval shape */
-    filter: blur(7px);
-    box-shadow: 8px 8px 20px #63767d,
-               -8px -8px 20px #fff;
-}
-
-/* Oval button hover effect */
-.home-page:hover:before {
-    box-shadow: 8px 8px 20px #63767d,
-               -8px -8px 20px #fff,
-               inset -8px -8px 20px #fff,
-               inset 8px 8px 20px #63767d;
-    transition: 0.3s ease-in;
-    transform: scale(1.05);
-}
-
-/* Oval button text */
-.home-page {
-    position: relative;
     cursor: pointer;
     color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 2rem;
     transition: scale 0.3s ease-out;
 }
 
-/* Oval button text hover effect */
+/* Shadow */
+.home-page:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /*Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.22em/* 7px */);
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff; 
+}
+
+/* Hover effect */
+.home-page:hover:before {
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff,
+               inset -0.25em -0.25em 0.6em #fff,
+               inset 0.25em 0.25em 0.6em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+/* Text hover effect */
 .home-page:hover {
     scale: 0.95;
 }

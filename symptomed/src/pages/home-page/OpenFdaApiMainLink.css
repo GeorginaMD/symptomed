@@ -1,9 +1,72 @@
-.titles {
-    border: 1px solid blue;
-    text-align: center;
-    margin: 2rem 15rem;
+.open-fda-main-link {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-top: 0.7rem;
+    border-radius: 2rem;
 }
 
-.link {
-    border: 8px solid green;
+.titles {
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.h1-title-fda {
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+
+.h2-title-fda {
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* STYLES FOR LINK TO OPENFDA API: */
+/* Button and text*/
+.symptoms-link {
+    margin: 0.6em;
+    position: relative;
+    display: flex; 
+    width: 8em;
+    height: 1.65em;
+    border-radius: 1.65em; /* Creates oval shape */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 2rem;
+    transition: scale 0.3s ease-out;
+}
+/* Shadow */
+.symptoms-link:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /* 52px-Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.22em/* 7px */);
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff;
+}
+/* Hover */
+.symptoms-link:hover:before {
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff,
+               inset -0.25em -0.25em 0.6em #fff,
+               inset 0.25em 0.25em 0.6em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+/* Text hover effect */
+.symptoms-link:hover{
+    scale: 0.95;
 }

@@ -5,8 +5,10 @@ import SupplementsApiMainLink from "./SupplementsApiMainLink"
 export default function HomeSection() {
     return (
         <section className="home-section">
-            <OpenFdaApiMainLink />
-            <SupplementsApiMainLink />
+            <div className="home-section-wrapper">
+                <OpenFdaApiMainLink />
+                <SupplementsApiMainLink />
+            </div>
         </section>
     )
 }
