@@ -13,14 +13,16 @@ import LoginSection from "./pages/login-page/LoginSection"
 import LoginProfileSection from "./pages/user-dashboard-login/LoginProfileSection"
 import DemoSection from "./pages/demo-page/DemoSection"
 import DemoLoginProfileSection from "./pages/user-dashboard-demo-login/DemoLoginProfileSection"
+import Footer from "./components/Footer"
 
 function Layout() {
   return (
-    <div>
+    <div className="layout">
       <Navbar />
       <main>
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }

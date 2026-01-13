@@ -1,58 +1,144 @@
 .home-page-wrapper  {
     display: flex;
     flex-direction: column;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Oval button base styles */
+/* Button and text styles */
 .home-page {
-    margin: 10px;
+    margin: 0.6em;
     position: relative;
     display: flex; 
-    width: 130px;
-    height: 52px;
-    border-radius: 52px; /* Creates oval shape */
+    width: 4.1em;
+    height: 1.50em;
+    border-radius: 1.65em; /* Creates oval shape */
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 2rem;
+    transition: scale 0.3s ease-out;
 }
 
-/* Oval button shadow/pseudo-element */
+/* Shadow */
 .home-page:before {
     position: absolute;
     inset: 0;
-    display: block;
-    width: 130px;
-    height: 52px;
     content: " ";
+    border-radius: inherit; /*Matches oval shape */
     cursor: pointer;
     transition: 0.3s ease-out;
-    border-radius: 52px; /* Matches oval shape */
-    filter: blur(7px);
-    box-shadow: 8px 8px 20px #63767d,
-               -8px -8px 20px #fff;
+    filter: blur(0.22em/* 7px */);
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff; 
 }
 
-/* Oval button hover effect */
+/* Hover effect */
 .home-page:hover:before {
-    box-shadow: 8px 8px 20px #63767d,
-               -8px -8px 20px #fff,
-               inset -8px -8px 20px #fff,
-               inset 8px 8px 20px #63767d;
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff,
+               inset -0.25em -0.25em 0.6em #fff,
+               inset 0.25em 0.25em 0.6em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+/* Text hover effect */
+.home-page:hover {
+    scale: 0.95;
+}
+
+
+/* TABLET (48rem / 768px) */
+@media (min-width: 768px) /* and (max-width: 1024px) */ {
+.home-page {
+	position: relative;
+   	display: flex;
+	align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    margin: 0.5em;
+    width: 3.8em;
+    height: 1.4em;
+	border-radius: 1.65em;
+    font-size: 1.75rem; /* Medium size */
+	transition: scale 0.3s ease-out;
+}
+.home-page:before {
+	position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /*Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.2em);
+    box-shadow: 0.22em 0.22em 0.55em #63767d,
+                -0.22em -0.22em 0.55em #fff;
+}
+/* Enable hover on tablet */
+.home-page:hover:before {
+    box-shadow: 0.22em 0.22em 0.55em #63767d,
+                -0.22em -0.22em 0.55em #fff,
+                inset -0.22em -0.22em 0.55em #fff,
+                inset 0.22em 0.22em 0.55em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+.home-page:hover {
+    scale: 0.95;
+}
+}
+
+/* MOBILE */
+@media (min-width: 375px) {
+.home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page {
+    margin: 0.4em;
+    position: relative;
+    display: flex;
+    width: 3.5em;
+    height: 1.3em;
+    border-radius: 1.65em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.5rem; /* Smaller for mobile */
+    transition: scale 0.3s ease-out;
+}
+
+.home-page:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.18em); /* Slightly less blur on mobile */
+    box-shadow: 0.2em 0.2em 0.5em #63767d,
+               -0.2em -0.2em 0.5em #fff;
+}
+
+.home-page:active:before {
+    box-shadow: 0.2em 0.2em 0.5em #63767d,
+               -0.2em -0.2em 0.5em #fff,
+               inset -0.2em -0.2em 0.5em #fff,
+               inset 0.2em 0.2em 0.5em #63767d;
     transition: 0.3s ease-in;
     transform: scale(1.05);
 }
 
-/* Oval button text */
-.home-page {
-    position: relative;
-    cursor: pointer;
-    color: #797979;
-    transition: scale 0.3s ease-out;
-}
-
-/* Oval button text hover effect */
-.home-page:hover {
+.home-page:active {
     scale: 0.95;
+}
 }

@@ -1,4 +1,51 @@
 .home-section {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    height: 77vh;
 }
+
+.home-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0.18em 0.18em 0.4em white,
+                -0.18em -0.18em 0.4em white,
+                0.20em 0.20em 1.5em rgb(184, 177, 161) inset,
+                -0.20em -0.20em 1.5em rgb(184, 177, 161) inset;
+    border-radius: 4rem;
+    /* height: 29em;
+    margin: 2em 4em; */
+    height: calc(77vh - 4rem);
+    margin: 0.7em 8em;
+    padding: 2rem 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .home-section-wrapper {
+        
+        border-radius: 2rem;
+        box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(184, 177, 161) inset,
+                    -0.15em -0.15em 1em rgb(184, 177, 161) inset;
+    }
+    .titles {
+        margin: 0.8em 0;
+    }
+    .open-fda-main-link,
+    .supplements-api-main-link {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section-wrapper {
+        width: 85vw;
+        align-content: center;
+    }
+}
+
