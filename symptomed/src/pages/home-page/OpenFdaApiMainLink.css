@@ -4,31 +4,35 @@
     align-self: center;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: min(90%, 600px);
     margin-top: 0.7rem;
     border-radius: 2rem;
 }
 
 .titles {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     align-self: center;
-    text-align: center;
+    width: 90%;
     margin: 1em 0 1em 0;
 }
 
 .h1-title-fda {
     font-family: "ZenLoop-Regular", sans-serif;
-    font-size: 3rem;
-    color: black;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    white-space: nowrap;
+    color: rgb(44, 44, 44);
 }
 
 .h2-title-fda {
     font-family: "ZenLoop-Regular", sans-serif;
-    font-size: 2.5rem;
-    color: black;
+    font-size: clamp(1.4rem, 3vw, 2.5rem);
+    white-space: nowrap;
+    color: rgb(44, 44, 44);
 }
 
-/* STYLES FOR LINK TO OPENFDA API: */
+/* STYLES FOR BUTTON - DESKTOP*/
 /* Button and text*/
 .symptoms-link {
     margin: 0.6em;
@@ -69,4 +73,114 @@
 /* Text hover effect */
 .symptoms-link:hover{
     scale: 0.95;
+}
+
+@media (max-width: 480px) {
+    /* allow wrapping on small screens: */
+    .h1-title-fda,
+    .h2-title-fda {
+        white-space: normal;
+        text-align: center;
+        font-size: clamp(1rem, 2vw, 1rem);
+    }
+} 
+
+@media (max-width: 710px) {
+    /* allow wrapping on small screens: */
+    .h1-title-fda,
+    .h2-title-fda {
+        white-space: normal;
+        text-align: center;
+        font-size: clamp(1.5rem, 2vw, 1.5rem);
+    }
+} 
+
+/* BUTTON - TABLET (48rem / 768px) */
+@media (max-width: 768px) {
+/* Button and text*/
+.symptoms-link {
+    margin: 0.6em;
+    position: relative;
+    display: flex; 
+    width: 8em;
+    height: 1.65em;
+    border-radius: 1.65em; /* Creates oval shape */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.5rem;
+    transition: scale 0.3s ease-out;
+}
+/* Shadow */
+.symptoms-link:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /* 52px-Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.22em/* 7px */);
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff;
+}
+/* Hover */
+.symptoms-link:hover:before {
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff,
+               inset -0.25em -0.25em 0.6em #fff,
+               inset 0.25em 0.25em 0.6em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+/* Text hover effect */
+.symptoms-link:hover{
+    scale: 0.95;
+}
+}
+
+/* BUTTON - MOBILE (rem / 425px) */
+@media (max-width: 425px) {
+/* Button and text*/
+.symptoms-link {
+    margin: 0.6em;
+    position: relative;
+    display: flex; 
+    width: 8em;
+    height: 1.65em;
+    border-radius: 1.65em; /* Creates oval shape */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1rem;
+    transition: scale 0.3s ease-out;
+}
+/* Shadow */
+.symptoms-link:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /* 52px-Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.22em);
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff;
+}
+/* Hover */
+.symptoms-link:hover:before {
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff,
+               inset -0.25em -0.25em 0.6em #fff,
+               inset 0.25em 0.25em 0.6em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+/* Text hover effect */
+.symptoms-link:hover{
+    scale: 0.95;
+} 
 }

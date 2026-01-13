@@ -1,4 +1,32 @@
-.medical-disclaimer {
+.footer-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
     font-family: "ZenLoop-Regular", sans-serif;
+}
+
+.medical-disclaimer {
     font-size: 1em;
+    align-content: end;
+}
+
+.btn-link {
+    margin: 0.1em 0.3em;
+    cursor: pointer;
+    /* filter: blur(0.02em); */
+    background-color: rgb(219, 220, 234);
+    color: black;
+    border-color: rgb(184, 177, 161);
+    border-bottom: rgb(184, 177, 161);
+    border-right: rgb(184, 177, 161);
+    border-radius: 1em;
+    /* box-shadow: 0.06em 0.06em 0.6em rgb(224, 219, 206),
+                    -0.06em -0.06em 0.6em rgb(224, 219, 206),
+                    0.06em 0.06em 0.06em rgb(209, 201, 183) inset,
+                    -0.06em -0.06em 0.06em rgb(209, 201, 183) inset; */
+}
+
+@media (max-width: 768px) {
+    
 }

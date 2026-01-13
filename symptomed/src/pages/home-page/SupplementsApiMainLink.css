@@ -3,16 +3,18 @@
     flex-direction: column;
     align-items: center;
     align-self: center;
-    width: 60%;
+    /* width: 60%; */
+    width: min(90%, 600px);
     margin: 2em 0;
 }
 
 .h1-title-supplements {
     font-family: "ZenLoop-Regular", sans-serif;
-    font-size: 3rem;
-    color: black;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    white-space: nowrap;
+    color: rgb(44, 44, 44);
 }
-
+/* STYLES FOR BUTTON */
 /* Button and text*/
 .supplements-link {
     margin: 0.6em;
@@ -53,4 +55,65 @@
 /* Text hover effect */
 .supplements-link:hover {
     scale: 0.95;
+} 
+
+/* BUTTON - TABLET (48rem / 768px) */
+@media (max-width: 768px) {
+.supplements-link {
+    margin: 0.6em;
+    position: relative;
+    display: flex; 
+    width: 8em;
+    height: 1.65em;
+    border-radius: 1.65em; /* Creates oval shape */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.5rem;
+    transition: scale 0.3s ease-out;
+}
+/* Shadow */
+.supplements-link:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /* 52px-Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.22em/* 7px */);
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff;
+}
+/* Hover */
+.supplements-link:hover:before {
+    box-shadow: 0.25em 0.25em 0.6em #63767d,
+               -0.25em -0.25em 0.6em #fff,
+               inset -0.25em -0.25em 0.6em #fff,
+               inset 0.25em 0.25em 0.6em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+/* Text hover effect */
+.supplements-link:hover{
+    scale: 0.95;
+}
+}
+
+
+@media (max-width: 480px) {
+    .h1-title-supplements {
+        white-space: normal;
+        text-align: center;
+        font-size: clamp(1rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 710px) {
+    .h1-title-supplements {
+        white-space: normal;
+        text-align: center;
+        font-size: clamp(1.5rem, 2vw, 1.5rem);
+    }
 } 

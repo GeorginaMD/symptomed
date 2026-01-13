@@ -48,3 +48,97 @@
 .home-page:hover {
     scale: 0.95;
 }
+
+
+/* TABLET (48rem / 768px) */
+@media (min-width: 768px) /* and (max-width: 1024px) */ {
+.home-page {
+	position: relative;
+   	display: flex;
+	align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    margin: 0.5em;
+    width: 3.8em;
+    height: 1.4em;
+	border-radius: 1.65em;
+    font-size: 1.75rem; /* Medium size */
+	transition: scale 0.3s ease-out;
+}
+.home-page:before {
+	position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit; /*Matches oval shape */
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.2em);
+    box-shadow: 0.22em 0.22em 0.55em #63767d,
+                -0.22em -0.22em 0.55em #fff;
+}
+/* Enable hover on tablet */
+.home-page:hover:before {
+    box-shadow: 0.22em 0.22em 0.55em #63767d,
+                -0.22em -0.22em 0.55em #fff,
+                inset -0.22em -0.22em 0.55em #fff,
+                inset 0.22em 0.22em 0.55em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+.home-page:hover {
+    scale: 0.95;
+}
+}
+
+/* MOBILE */
+@media (min-width: 375px) {
+.home-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page {
+    margin: 0.4em;
+    position: relative;
+    display: flex;
+    width: 3.5em;
+    height: 1.3em;
+    border-radius: 1.65em;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.5rem; /* Smaller for mobile */
+    transition: scale 0.3s ease-out;
+}
+
+.home-page:before {
+    position: absolute;
+    inset: 0;
+    content: " ";
+    border-radius: inherit;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    filter: blur(0.18em); /* Slightly less blur on mobile */
+    box-shadow: 0.2em 0.2em 0.5em #63767d,
+               -0.2em -0.2em 0.5em #fff;
+}
+
+.home-page:active:before {
+    box-shadow: 0.2em 0.2em 0.5em #63767d,
+               -0.2em -0.2em 0.5em #fff,
+               inset -0.2em -0.2em 0.5em #fff,
+               inset 0.2em 0.2em 0.5em #63767d;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+
+.home-page:active {
+    scale: 0.95;
+}
+}

@@ -3,7 +3,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    height: 33em;
+    height: 77vh;
 }
 
 .home-section-wrapper {
@@ -16,49 +16,36 @@
                 0.20em 0.20em 1.5em rgb(184, 177, 161) inset,
                 -0.20em -0.20em 1.5em rgb(184, 177, 161) inset;
     border-radius: 4rem;
-    height: 29em;
-    margin: 2em 4em;
+    /* height: 29em;
+    margin: 2em 4em; */
+    height: calc(77vh - 4rem);
+    margin: 0.7em 8em;
+    padding: 2rem 1rem;
 }
 
 
-/* Styles */
-/* .home-section-wrapper {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border: 1px solid white;
-    height: 29em;
-    margin: 2em 4em;
-    box-shadow: 5px 5px 5px #0008;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    z-index: 2;
-}
-.home-section-wrapper::before, .home-section-wrapper::after {
-    content: "";
-    border: 1px solid red;
-    position: absolute;
-    height: 27em;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-.home-section-wrapper::before {
-    background: conic-gradient(#44f 20deg, transparent 120deg);
-    animation: rotate 4s infinite linear;
-}
-.home-section-wrapper:after {
-    background: #222;
-    height: 95%;
-    box-shadow: 5px 5px 15px #0008 inset;
-    border-radius: 10px;
-}
-
-@keyframes rotate {
-    100% {
-        transform: translate(-50%, -50%);
-        rotate (-360deg);
+@media (max-width: 768px) {
+    .home-section-wrapper {
+        
+        border-radius: 2rem;
+        box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(184, 177, 161) inset,
+                    -0.15em -0.15em 1em rgb(184, 177, 161) inset;
     }
-} */
+    .titles {
+        margin: 0.8em 0;
+    }
+    .open-fda-main-link,
+    .supplements-api-main-link {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-section-wrapper {
+        width: 85vw;
+        align-content: center;
+    }
+}
+
