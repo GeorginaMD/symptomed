@@ -4,6 +4,14 @@
     text-align: center;
     flex-direction: row;
     font-family: "ZenLoop-Regular", sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-links {
+    align-self: center;
 }
 
 .medical-disclaimer {
@@ -27,6 +35,13 @@
                     -0.06em -0.06em 0.06em rgb(209, 201, 183) inset; */
 }
 
-@media (max-width: 768px) {
-    
+@media (min-width: 768px) {
+.medical-disclaimer {
+    font-size: 1rem;
+    flex-wrap: nowrap;
+   /*  margin-top: 0.5rem; */
+}
+.footer-links {
+    /* margin-top: 0.5rem; */
+}
 }

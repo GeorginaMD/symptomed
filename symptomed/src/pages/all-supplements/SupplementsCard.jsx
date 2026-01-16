@@ -5,10 +5,36 @@ export default function SupplementsCard({ supplement }) {
     
     return (
         <div className="supplement-card">
+            <div className="supplement-inner-wrapper">
+                <div className="image-name">
+                    <img src="./images/supplements/Citruline.webp" alt="" className="supplement-image"/>
+                    {/* Make the <h1> to be a button that will direct to the card for the supplement*/} 
+                    <h1 className="supplement-name">Citruline</h1>
+                </div>
+                <div className="image-name">
+                    <img src="./images/supplements/NAC.webp" alt="" className="supplement-image"/>
+                    <h1 className="supplement-name">NAC</h1>
+                </div>
+                <div className="image-name">
+                    <img src="./images/supplements/Iron.webp" alt="" className="supplement-image"/>
+                    <h1 className="supplement-name">Iron</h1>
+                </div>
+                <div className="image-name">
+                    <img src="./images/supplements/Selenium.webp" alt="" className="supplement-image"/>
+                    <h1 className="supplement-name">Selenium</h1>
+                </div>
+                <div className="image-name">
+                    <img src="./images/supplements/Coenzyme-Q10.webp" alt="" className="supplement-image"/>
+                    <h1 className="supplement-name">Coenzyme-Q10</h1>
+                </div>
+            </div>
+        </div>
+        /* CAN I PUT LINK INTO H1 OR REVERSE */
+        /* <div className="supplement-card">
             <Link to={`/one-supplement/${supplement.slug}`} className="link"> 
                 <h1>{supplement.name}</h1>
                 <img src={supplement.image} alt={supplement.name} className="supplement-image"/>
             </Link>
-        </div>
+        </div> */
     )
 }

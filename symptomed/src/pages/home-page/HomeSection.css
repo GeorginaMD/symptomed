@@ -13,8 +13,10 @@
     text-align: center;
     box-shadow: 0.18em 0.18em 0.4em white,
                 -0.18em -0.18em 0.4em white,
-                0.20em 0.20em 1.5em rgb(184, 177, 161) inset,
-                -0.20em -0.20em 1.5em rgb(184, 177, 161) inset;
+                0.20em 0.20em 1.5em rgb(206, 199, 183) inset,
+                -0.20em -0.20em 1.5em rgb(206, 199, 183) inset;
+                /* 0.20em 0.20em 1.5em rgb(184, 177, 161) inset,
+                -0.20em -0.20em 1.5em rgb(184, 177, 161) inset; */
     border-radius: 4rem;
     /* height: 29em;
     margin: 2em 4em; */

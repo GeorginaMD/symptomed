@@ -1,4 +1,5 @@
-.supplements-section {
+/*STYLES FOR A CAROUSEL:*/
+/* .supplements-section {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -9,4 +10,8 @@
 
 .supplements-section::-webkit-scrollbar {
   display: none;
+} */
+
+.supplements-section {
+ margin: 1.3rem 0;
 }
