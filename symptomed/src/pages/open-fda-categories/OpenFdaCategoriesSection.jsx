@@ -5,11 +5,13 @@ import ButtonHomePage from "../../components/ButtonHomePage"
 
 export default function OpenFdaCategoriesSection() {
     return (
-        <section className="open-fda-categories-section">
-            <p>test open fda categories section</p>
-            <OpenFdaDataCategories />
-            <OpenFdaDataDrugs />
+        <div>
+            <section className="open-fda-categories-section">
+                <OpenFdaDataCategories />
+                <OpenFdaDataDrugs />
+            </section>
             <ButtonHomePage />
-        </section>
+        </div>
+        
     )
 }

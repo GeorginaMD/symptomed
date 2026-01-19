@@ -1,0 +1,105 @@
+.categories-wrapper {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.4em;
+    color: rgb(22, 22, 22);
+}
+
+.drug-category {
+    all: unset;
+    border: 1px solid blue;
+    cursor: pointer;
+    width: 20em;
+    height: 300px;
+    position: relative;
+}
+
+.drug-image {
+    /* width: 20em; */
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 0.3em;
+    border-radius: 2rem;
+    /* height: 150px; */
+}
+
+.category-name {
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    z-index: 2;
+    font-size: 1.2rem;
+}
+
+.category-name:hover {
+    scale: 0.95;
+    text-shadow: 0.3px 0.3px 1px rgb(79, 76, 99);
+}
+
+/*Styles for scrollbar*/
+.categories-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+.categories-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+.categories-wrapper::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.categories-wrapper::-webkit-scrollbar-thumb {
+    background: rgb(138, 138, 136);
+    border-radius: 8px;
+}
+
+@media (max-width: 950px) {
+.categories-wrapper {
+    display: grid;
+    height: 60vh;
+    overflow-y: scroll;
+    border-radius: 2rem;
+    place-items: center;
+}
+.drug-category {
+    height: 50vh;
+    width: 80%;
+    place-items: center;
+    margin: 0.3rem 0;
+}
+.drug-image {
+        height: 50vh;
+        width: auto;
+}
+.category-name {
+    position: absolute;
+    top: 85%;
+    left: 35%;
+}
+}
+
+@media (max-width: 480px) {
+    .categories-wrapper {
+        display: grid;
+        height: 60vh;
+        overflow-y: scroll;
+        border-radius: 2rem;
+        place-items: center;
+    }
+    .drug-category{
+        height: 50vh;
+        width: 80%;
+        
+    }
+    .drug-image {
+        width: 100%;
+        height: auto;
+    }
+    .category-name {
+        font-size: 1.5rem;
+    }
+}

@@ -4,6 +4,18 @@
     text-align: center;
     flex-direction: row;
     font-family: "ZenLoop-Regular", sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    overflow: visible;
+    
+}
+
+.footer-links {
+    align-self: center;
+    height: 2rem;
 }
 
 .medical-disclaimer {
@@ -27,6 +39,36 @@
                     -0.06em -0.06em 0.06em rgb(209, 201, 183) inset; */
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 1200px) {
+    .footer-wrapper {
+        font-size: 0.8rem;
+    }
+    .footer-links {
+        align-content: end;
 }
+}
+
+@media (max-width: 1024px) {
+    .footer-wrapper {
+       display: flex;
+       font-size: 0.7rem;
+    }    
+}
+
+@media (max-width: 860px) {
+    .footer-wrapper {
+       font-size: 0.6rem;
+}
+    .footer-links {
+        align-content: end;
+}
+}
+
+/* @media (max-width: 480px) {
+    .footer-wrapper {
+       
+    }
+    .medical-disclaimer, .footer-links {
+    
+    }
+} */

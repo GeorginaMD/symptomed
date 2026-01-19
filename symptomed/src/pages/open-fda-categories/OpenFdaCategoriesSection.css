@@ -1,7 +1,31 @@
 .open-fda-categories-section {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65vh;
+    margin: 1.5em 7em;
+    border: 1px solid black;
+    border-radius: 4rem;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
 }
 
-.link {
-    border: 8px solid green;
+@media (max-width: 768px) {
+    .open-fda-categories-section {
+        height: calc(65vh - 4rem);
+        margin: 1.5em 7em;
+        border-radius: 2rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .open-fda-categories-section {
+        height: calc(65vh - 5rem);
+        margin: 2em 7em;
+        border-radius: 2rem;
+    }
 }
