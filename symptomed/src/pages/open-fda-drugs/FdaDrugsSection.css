@@ -1,7 +1,75 @@
 .fda-drugs-section {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 1em 0;
 }
 
-.link {
-    border: 8px solid green;
+.fda-drugs-section-wrapper {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    border: 1px solid yellow;
+    height: calc(70vh - 4rem);
+    width: 85vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 4em;
+    margin: 0.7em 8em;
+    padding: 2rem 1rem;
+    /* overflow: scroll; */
+    overflow-y: scroll;
 }
+
+/*Styles for scrollbar*/
+.fda-drugs-section-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+.fda-drugs-section-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+.fda-drugs-section-wrapper::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.fda-drugs-section-wrapper::-webkit-scrollbar-thumb {
+    background: rgb(138, 138, 136);
+    border-radius: 8px;
+}
+.fda-drugs-section-wrapper::-webkit-scrollbar-thumb:horizontal {
+    background: transparent;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .fda-drugs-section {
+        align-items: center;
+    }
+
+    .fda-drugs-section-wrapper {
+        border: 1px solid red;
+        flex-direction: column;
+        height: calc(70vh - 6rem);
+        width: calc(85vw - 4rem);
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .fda-drugs-section-wrapper {
+        border: 1px solid chartreuse;
+        flex-direction: column;
+        width: 85vw;
+        align-self: center;
+        justify-content: center;
+    }
+}
+
+
+

@@ -1,6 +1,43 @@
 .drug-card {
-    display: inline-block;
-    border: 2px solid black;
-    padding: 10px;
-    margin: 20px;
+    border: 2px solid blue;
+    border-radius: 0.5rem;
+    height: 20em;
+    width: 80vw;
+    margin: 0.5em;
+    overflow: scroll;
 }
+.drug-card-data p {
+    margin: 1em;
+}
+
+/*Styles for scrollbar*/
+.drug-card::-webkit-scrollbar {
+    width: 5px;
+}
+.drug-card::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+.drug-card::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.drug-card::-webkit-scrollbar-thumb {
+    background: rgb(138, 138, 136);
+    border-radius: 8px;
+}
+
+@media (max-width: 480px), (max-width: 768px) {
+.symptom {
+    margin: 0.7em;
+}
+
+.drug-card {
+    overflow: scroll;
+    height: 20em;
+    width: calc(100% - 2rem);
+    margin: 0.5em;
+    justify-self: center;
+    
+}
+}
+

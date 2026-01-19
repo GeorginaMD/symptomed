@@ -5,12 +5,17 @@ import ButtonHomePage from "../../components/ButtonHomePage"
 export default function FdaDrugsSection() {
     return(
         <section className="fda-drugs-section">
-            <p>These are the recommendations for your symptoms:</p>
-            <FdaDrugCardData />
-            <FdaDrugCardData />
-            <FdaDrugCardData />
-            <br />
+            <p>These drugs are recommended for your symptoms:</p>
+            <div className="fda-drugs-section-wrapper">
+                <FdaDrugCardData />
+                <FdaDrugCardData />
+                <FdaDrugCardData />
+                <FdaDrugCardData />
+                <FdaDrugCardData />
+                <FdaDrugCardData />
+            </div>
             <ButtonHomePage />
+
         </section>
     )
 }
