@@ -4,9 +4,7 @@ export default function DisclaimerModal({ type, onClose }) {
   const content = {
     privacy: `Privacy Notice - 
         We respect your privacy. This application collects and stores only the information necessary to provide its core functionality, such as creating a user account and saving a personal health profile.
-        The information you choose to provide may include general health-related data (such as symptoms, preferences, or supplement interests), but this data is not used for medical diagnosis and is not shared with third parties.
-        Your data is stored securely and is used only to improve your experience within the application. You may request deletion of your account and associated data at any time.
-        We do not sell, rent, or share your personal information with advertisers or external services.`,
+        The information you choose to provide may include general health-related data (such as symptoms, preferences, or supplement interests), but this data is not used for medical diagnosis and is not shared with third parties.Your data is used only to improve your experience within the application. You may request deletion of your account and associated data at any time. We do not sell, rent, or share your personal information with advertisers or external services.`,
     demo: `Demo Mode - 
         This application offers a demo mode with pre-filled example data so that users can explore its functionality without creating an account or providing any personal information.
         The demo data is fictional and does not represent real individuals or medical cases.`,
