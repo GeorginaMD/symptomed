@@ -9,28 +9,20 @@
 }
 
 .modal {
-  background: rgb(181, 180, 180);
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 500px;
-  width: 90%;
-}
-
-.modal {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  /* position: absolute; */
-  /* top: 1rem;
-  right: 1rem; */
+  background: rgb(181, 180, 180);
+  padding: 1.2rem;
+  border-radius: 12px;
+  width: 90%;
 }
 
 .close {
-    width: 10%;
+    width: 5%;
     align-self: flex-end;
-    
 }
 
 .text-disclaimer {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
