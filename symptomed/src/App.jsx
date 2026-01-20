@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         element: <OpenFdaCategoriesSection />
       },
       {
-        path: "open-fda-drugs",
+        path: "open-fda-drugs/:query",
         element: <FdaDrugsSection />
       },
       {
