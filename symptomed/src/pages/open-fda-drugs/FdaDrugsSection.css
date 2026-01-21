@@ -1,30 +1,38 @@
 .fda-drugs-section {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    border: 1px solid black;
+    height: 75vh;
     border-radius: 10px;
-    margin: 1em 0;
+    margin: 0.5em 0;
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.5em;
+}
+
+.title-recommended-drugs {
+    font-family: "ZenLoop-Italic", sans-serif;
+    font-size: 1.3em;
 }
 
 .fda-drugs-section-wrapper {
     /* display: flex;
     flex-direction: row; */
     display: grid;
-    border: 1px solid yellow;
     height: calc(70vh - 4rem);
     width: 85vw;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     border-radius: 4em;
     margin: 0.7em 8em;
     padding: 2rem 1rem;
-    /* overflow: scroll; */
     overflow-y: scroll;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
 }
 
 /*Styles for scrollbar*/
@@ -39,7 +47,7 @@
     background: transparent;
 }
 .fda-drugs-section-wrapper::-webkit-scrollbar-thumb {
-    background: rgb(138, 138, 136);
+    background: rgb(164, 164, 164);
     border-radius: 8px;
 }
 .fda-drugs-section-wrapper::-webkit-scrollbar-thumb:horizontal {
@@ -53,7 +61,6 @@
     }
 
     .fda-drugs-section-wrapper {
-        border: 1px solid red;
         flex-direction: column;
         height: calc(70vh - 6rem);
         width: calc(85vw - 4rem);
@@ -63,7 +70,6 @@
 
 @media (max-width: 480px) {
     .fda-drugs-section-wrapper {
-        border: 1px solid chartreuse;
         flex-direction: column;
         width: 85vw;
         align-self: center;

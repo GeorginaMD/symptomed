@@ -4,6 +4,7 @@ import "./App.css"
 import Navbar from "./components/Navbar"
 import HomeSection from "./pages/home-page/HomeSection"
 import OpenFdaCategoriesSection from "./pages/open-fda-categories/OpenFdaCategoriesSection"
+import OpenFdaDataDrugs from "./pages/open-fda-categories/OpenFdaDataDrugs"
 import FdaDrugsSection from "./pages/open-fda-drugs/FdaDrugsSection"
 import SupplementsSection from "./pages/all-supplements/SupplementsSection"
 import OneSupplementSection from "./pages/one-supplement/OneSupplmentSection"
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
       },
       {
         path: "open-fda-drugs/:query",
-        element: <FdaDrugsSection />
+        element: <OpenFdaDataDrugs />
       },
       {
         path: "all-supplements",
