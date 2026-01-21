@@ -3,6 +3,7 @@
 "data": [
 {
 "name": "A vitamin",
+"image": "/images/supplements/Vitamin-A.webp",
 "slug": "a-vitamin",
 "benefits": ["Supporting vision", "Skin health"],
 "disease": ["Night blindness", "Acne vulgaris"],
@@ -20,6 +21,7 @@
 },
 {
 "name": "B1 vitamin",
+"image": "/images/supplements/Vitamin-B1.webp",
 "slug": "b1-vitamin",
 "benefits": ["Supports the nervous system", "Improves mood"],
 "disease": ["Beriberi", "Diabetic nerve pain"],
@@ -28,6 +30,7 @@
 },
 {
 "name": "B2 vitamin",
+"image": "/images/supplements/Vitamin-B2.webp",
 "slug": "b2-vitamin",
 "benefits": ["Reducing the frequency and severity of migraine headaches", "Supports eye health"],
 "disease": ["Migraine headaches", "Cataracts"],
@@ -36,6 +39,7 @@
 },
 {
 "name": "B3 vitamin",
+"image": "/images/supplements/Vitamin-B3.webp",
 "slug": "b3-vitamin",
 "benefits": ["Improve blood fat levels (cholesterol)", "Improves skin health by reducing inflammation"],
 "disease": ["Pellagra", "Dyslipidemia"],
@@ -44,6 +48,7 @@
 },
 {
 "name": "B5 vitamin",
+"image": "/images/supplements/Vitamin-B5.webp",
 "slug": "b5-vitamin",
 "benefits": ["Support for the nervous system and brain health", "Contributes to skin and hair health"],
 "disease": ["Atopic dermatitis", "Dyslipidemia"],
@@ -52,6 +57,7 @@
 },
 {
 "name": "B6 vitamin",
+"image": "/images/supplements/Vitamin-B6.webp",
 "slug": "b6-vitamin",
 "benefits": ["Healthy nervous system and brain function", "Supports heart health"],
 "disease": ["Premenstrual syndrome", "Pyridoxine-dependent epilepsy"],
@@ -60,6 +66,7 @@
 },
 {
 "name": "B7 vitamin",
+"image": "/images/supplements/Vitamin-B7.webp",
 "slug": "b7-vitamin",
 "benefits": ["Support hair, skin, and nail health", "Potentially alleviates symptoms like brain fog and depression"],
 "disease": ["Alopecia", "Biotin-responsive basal ganglia disease"],
@@ -68,6 +75,7 @@
 },
 {
 "name": "B9 vitamin",
+"image": "/images/supplements/Vitamin-B9.webp",
 "slug": "b9-vitamin",
 "benefits": ["Vital for the formation of red blood cells and DNA", "Improve memory and thinking skills"],
 "disease": ["Celiac disease", "Crohn’s disease"],
@@ -76,6 +84,7 @@
 },
 {
 "name": "B12 vitamin",
+"image": "/images/supplements/Vitamin-B12.webp",
 "slug": "b12-vitamin",
 "benefits": ["Creating healthy red blood cells", "Maintaining the health of your nervous system"],
 "disease": ["Megaloblastic anemia", "Pernicious anemia"],
@@ -133,6 +142,7 @@
 },
 {
 "name": "C vitamin",
+"image": "/images/supplements/Vitamin-C.webp",
 "slug": "c-vitamin",
 "benefits": ["Enhancing iron absorption", "Promoting collagen production for skin health"],
 "disease": ["Scurvy", "Iron-deficiency anemia"],
@@ -141,6 +151,7 @@
 },
 {
 "name": "D vitamin",
+"image": "/images/supplements/Vitamin-D.webp",
 "slug": "d-vitamin",
 "benefits": ["Crucial for bone health", "Improved muscle function and strength"],
 "disease": ["Osteoporosis", "Rickets"],
@@ -149,6 +160,7 @@
 },
 {
 "name": "E vitamin",
+"image": "/images/supplements/Vitamin-E.webp",
 "slug": "e-vitamin",
 "benefits": ["Support for the immune system", "Maintain skin hydration"],
 "disease": ["Nonalcoholic fatty liver disease", "Age-related macular degeneration"],
@@ -198,6 +210,7 @@
 },
 {
 "name": "K vitamin",
+"image": "/images/supplements/Vitamin-K.webp",
 "slug": "k-vitamin",
 "benefits": ["Supporting blood clotting", "Improves bone strength"],
 "disease": ["Celiac disease", "Cystic fibrosis"],
@@ -230,6 +243,7 @@
 },
 {
 "name": "Omega-3",
+"image": "/images/supplements/Omega-3.webp",
 "slug": "omega-3",
 "benefits": ["Help lower triglyceride levels", "Support cognitive function and improve memory"],
 "disease": ["Coronary heart disease", "Ischemic stroke"],
@@ -238,6 +252,7 @@
 },
 {
 "name": "Omega-6",
+"image": "/images/supplements/Omega-6.webp",
 "slug": "omega-6",
 "benefits": ["Help lower harmful LDL cholesterol", "Can reduce the risk of heart attacks"],
 "disease": ["Not recommended for any specific disease"],
