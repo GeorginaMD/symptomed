@@ -11,12 +11,14 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    box-shadow: 0.18em 0.18em 0.4em white,
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
+    /* box-shadow: 0.18em 0.18em 0.4em white,
                 -0.18em -0.18em 0.4em white,
                 0.20em 0.20em 1.5em rgb(206, 199, 183) inset,
-                -0.20em -0.20em 1.5em rgb(206, 199, 183) inset;
-                /* 0.20em 0.20em 1.5em rgb(184, 177, 161) inset,
-                -0.20em -0.20em 1.5em rgb(184, 177, 161) inset; */
+                -0.20em -0.20em 1.5em rgb(206, 199, 183) inset; */            
     border-radius: 4rem;
     /* height: 29em;
     margin: 2em 4em; */
@@ -28,12 +30,15 @@
 
 @media (max-width: 768px) {
     .home-section-wrapper {
-        
         border-radius: 2rem;
         box-shadow: 0.15em 0.15em 0.3em white,
                     -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
+        /* box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
                     0.15em 0.15em 1em rgb(184, 177, 161) inset,
-                    -0.15em -0.15em 1em rgb(184, 177, 161) inset;
+                    -0.15em -0.15em 1em rgb(184, 177, 161) inset; */
     }
     .titles {
         margin: 0.8em 0;

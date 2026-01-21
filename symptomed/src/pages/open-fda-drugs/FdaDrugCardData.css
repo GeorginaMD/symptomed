@@ -1,14 +1,28 @@
 .drug-card {
-    border: 2px solid blue;
-    border-radius: 0.5rem;
+    border: 1px solid white;
+    box-shadow: 0.06em 0.06em 0.6em white inset;
+    border-radius: 2rem;
     height: 20em;
-    width: 80vw;
+    width: 75vw;
     margin: 0.5em;
     overflow: scroll;
+    
 }
+
+.drug-card-data {
+   /*  display: grid; */
+}
+
 .drug-card-data p {
     margin: 1em;
+    
 }
+
+.drug-name, .drug-purpose, .drug-uses, .drug-dosage, .warnings {
+    font-size: 1.5em;
+    text-shadow: 0.6px 0.6px 1px rgb(79, 76, 99);
+    
+} 
 
 /*Styles for scrollbar*/
 .drug-card::-webkit-scrollbar {
@@ -22,7 +36,8 @@
     background: transparent;
 }
 .drug-card::-webkit-scrollbar-thumb {
-    background: rgb(138, 138, 136);
+    background: rgb(184, 184, 184);
+    box-shadow: 0.05em 0.05em 0.05em white inset;
     border-radius: 8px;
 }
 
