@@ -1,11 +1,11 @@
 .supplement-card-data {
-    
-    text-align: center;
+    border: 1px solid blue;
+    /* text-align: center; */
     
 }
 
 .supplement-image {
-    margin: auto;
+    /* margin: auto;
     width: 200px;
-    height: 260px;
+    height: 260px; */
 }

@@ -1,17 +1,17 @@
-/*STYLES FOR A CAROUSEL:*/
-/* .supplements-section {
+.supplements-section {
+  border: 1px solid black;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+   /*  flex-wrap: nowrap; */
+   /*  overflow-x: auto; */
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.supplements-section::-webkit-scrollbar {
+/* .supplements-section::-webkit-scrollbar {
   display: none;
 } */
 
-.supplements-section {
+/* .supplements-section {
  margin: 1.3rem 0;
-}
+} */
