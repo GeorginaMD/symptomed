@@ -12,7 +12,7 @@
 },
 {
 "name": "Berberine",
-"image": "/symptomed/public/images/supplements/Berberine.webp",
+"image": "/images/supplements/Berberine.webp",
 "slug": "berberine",
 "benefits": ["Lower blood sugar levels", "Improve insulin sensitivity"],
 "disease": ["Type 2 diabetes", "Polycystic ovary syndrome"],
@@ -93,7 +93,7 @@
 },
 {
 "name": "Caffeine",
-"image": "/symptomed/public/images/supplements/Caffeine.webp",
+"image": "/images/supplements/Caffeine.webp",
 "slug": "caffeine",
 "benefits": ["Can improve mood and brain function", "May aid in weight management by stimulating metabolism and increasing fat burning"],
 "disease": ["Type 2 diabetes", "Parkinson’s disease"], 
@@ -169,7 +169,7 @@
 },
 {
 "name": "Ginkgo",
-"image": "/symptomed/public/images/supplements/Ginkgo.webp",
+"image": "/images/supplements/Ginkgo.webp",
 "slug": "ginkgo",
 "benefits": ["Improve cognitive function", "Improve blood flow to the brain, eyes, ears, and legs"],
 "disease": ["Dementia", "Raynaud's disease"],
@@ -277,7 +277,7 @@
 },
 {
 "name": "Resveratrol",
-"image": "/symptomed/public/images/supplements/Resveratrol.webp",
+"image": "/images/supplements/Resveratrol.webp",
 "slug": "resveratrol",
 "benefits": ["Protects against cardiovascular disease", "Improves insulin sensitivity and lowers blood glucose"],
 "disease": ["Cardiovascular disease", "Diabetes"],
@@ -294,7 +294,7 @@
 },
 {
 "name": "Turmeric",
-"image": "/symptomed/public/images/supplements/Turmeric.webp",
+"image": "/images/supplements/Turmeric.webp",
 "slug": "turmeric",
 "benefits": ["Has anti-inflammatory and antioxidant properties", "Can aid in weight management for people with diabetes"],
 "disease": ["Osteoarthritis", "Rheumatoid arthritis"],
