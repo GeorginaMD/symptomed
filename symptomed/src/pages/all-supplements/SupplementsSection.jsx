@@ -16,12 +16,12 @@ export default function SupplementsSection() {
 
     return (
         <section className="supplements-section">
-            {/* {supplements.map(s => (
+            {supplements.map(s => (
                 <SupplementsCard key={s.slug} supplement={s}/>
-            ))} */}
-            <SupplementsCard />
+            ))}
+            {/* <SupplementsCard /> */}
             <ButtonHomePage />
-            <Link to="" className="">Display all the supplements</Link>
+            {/* <Link to="" className="">Display all the supplements</Link> */}
         </section>
     )
 }
