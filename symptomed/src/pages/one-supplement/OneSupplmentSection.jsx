@@ -21,7 +21,6 @@ export default function OneSupplementSection() {
             <br />
             {/* <Link to="/all-supplements" className="all-vitamins"> All Vitamins </Link> */}
             <ButtonHomePage />
-            <Link to="/all-supplements" className="home-page" /* title="Try the app with example data — no account needed!" */>Back</Link>
         </section>
         
     )

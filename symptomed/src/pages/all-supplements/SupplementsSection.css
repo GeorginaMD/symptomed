@@ -1,5 +1,5 @@
 .supplements-section-wrapper {
-   display: flex;
+    display: flex;
     flex-direction: column;
     overflow-y: scroll;
     height: 68vh;
@@ -12,13 +12,13 @@
 }
 
 .supplements-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  text-align: center;
-  justify-content: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+   text-align: center;
+   justify-content: space-around;
 }
 
 /*Styles for scrollbar*/
