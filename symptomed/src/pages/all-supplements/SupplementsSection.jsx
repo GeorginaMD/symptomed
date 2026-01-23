@@ -34,7 +34,6 @@ export default function SupplementsSection() {
             </div>
 >>>>>>> b0b5dd7 (Added display layout and styling for all supplements page)
             <ButtonHomePage />
-            {/* <Link to="" className="">Display all the supplements</Link> */}
-        </section>
+        </div>
     )
 }
