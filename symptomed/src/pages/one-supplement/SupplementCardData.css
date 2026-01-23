@@ -1,11 +1,109 @@
+.supplement-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 68vh;
+    border-radius: 4rem;
+    margin: 0 7em;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
 .supplement-card-data {
-    border: 1px solid blue;
-    /* text-align: center; */
-    
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 85%;
+    align-items: center;
+    margin: 1rem;
 }
 
 .supplement-image {
-    /* margin: auto;
-    width: 200px;
-    height: 260px; */
+    margin: 0 1rem;
+}
+.supplement-image:hover{
+    scale: unset;
+    box-shadow: none;
+}
+.supplement-ul-wrapper {
+    width: 70%;
+    margin: 0 1rem;
+    border-radius: 3rem;
+    box-shadow: 0.06em 0.06em 0.6em white inset;
+}
+.supplement-name-h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+.supplement-data-ul {
+    margin: 0.3rem 1rem 1.5rem 1rem;
+    border-radius: 1rem;
+}
+.supplement-data-li {
+    margin: 0.2rem 1rem;
+    font-size: 1.2em;
+}
+span {
+    text-shadow: 0.3px 0.3px 1px rgb(62, 60, 78);
+    font-size: 1.5rem;
+}
+
+
+ /*Styles for scrollbar*/
+    .supplement-card-wrapper::-webkit-scrollbar {
+        width: 15px;
+    }
+    .supplement-card-wrapper::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+    .supplement-card-wrapper::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+    .supplement-card-wrapper::-webkit-scrollbar-thumb {
+        background: rgb(177, 174, 195);
+        box-shadow: 0.06em 0.06em 0.6em white inset;
+        border: 1px solid rgb(255, 254, 254);
+        border-radius: 8px;
+}
+
+
+@media (max-width: 1180px) {
+        .supplement-card-data {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 780px) {
+    .supplement-card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .supplement-card-data {
+        flex-direction: column;
+        align-items: center;
+    }
+    .supplement-ul-wrapper {
+        margin: 1rem;
+    }
+    .supplement-data-ul {
+        font-size: 1.1rem;
+    }
+    .supplement-name-h1 {
+        font-size: 1.8rem;
+        text-shadow: 0.3px 0.3px 1px rgb(62, 60, 78);
+    }
+    span {
+        font-size: 1.2rem;
+        text-shadow: 0.3px 0.3px 1px rgb(62, 60, 78);
+    }
 }

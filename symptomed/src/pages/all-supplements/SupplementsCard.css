@@ -1,19 +1,35 @@
 .supplement-card {
-  border: 1px solid red;
-    /* flex-shrink: 0;
-    display: inline-block;
-    padding: 10px;
-    margin: 20px; */
+  display: flex;
+  flex-direction: column;
+  font-family: "ZenLoop-Regular", sans-serif;
+  font-size: 1em;
+  align-items: center;
+  margin: 1rem;
+  box-shadow: 0.06em 0.06em 0.6em white inset;
+  border-radius: 2rem;
+  width: 20%;
 }
 
 .supplement-link {
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 1rem 0;
 }
 
-.supplement-image {
-  border: 1px solid yellow;
-    /* width: 100px;
-    height: 160px; */
+
+@media (max-width:768px) {
+  .supplement-card-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width:768px) {
+  .supplement-card-title {
+    font-size: 1.1rem;
+  }
 }
 /* STYLES FOR MOCKUP DATA: */
 /* .supplement-inner-wrapper {

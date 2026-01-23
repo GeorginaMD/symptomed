@@ -1,11 +1,24 @@
-.supplements-section {
-  border: 1px solid black;
+.supplements-section-wrapper {
     display: flex;
-   /*  flex-wrap: nowrap; */
-   /*  overflow-x: auto; */
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    /* text-align: center; */
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 68vh;
+    border-radius: 4rem;
+    margin: 1em 7em;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
+}
+
+.supplements-section {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
+   text-align: center;
+   justify-content: space-around;
 }
 
 /* .supplements-section::-webkit-scrollbar {
