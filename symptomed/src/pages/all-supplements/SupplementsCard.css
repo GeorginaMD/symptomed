@@ -1,5 +1,11 @@
 .supplement-card {
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  font-family: "ZenLoop-Regular", sans-serif;
+  font-size: 1em;
+  /* width: 10rem;
+  height: 18rem; */
     /* flex-shrink: 0;
     display: inline-block;
     padding: 10px;
@@ -8,12 +14,14 @@
 
 .supplement-link {
   border: 1px solid green;
+  width: 100%;
+  height: auto;
 }
 
 .supplement-image {
   border: 1px solid yellow;
-    /* width: 100px;
-    height: 160px; */
+  width: 250px;
+  height: auto;
 }
 /* STYLES FOR MOCKUP DATA: */
 /* .supplement-inner-wrapper {

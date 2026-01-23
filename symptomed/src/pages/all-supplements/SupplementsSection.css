@@ -1,17 +1,41 @@
-.supplements-section {
-  border: 1px solid black;
-    display: flex;
-   /*  flex-wrap: nowrap; */
-   /*  overflow-x: auto; */
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    /* text-align: center; */
+.supplements-section-wrapper {
+   border: 1px solid black;
+   display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 70vh;
+    border-radius: 4rem;
+    margin: 1.5em 7em;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
 }
 
-/* .supplements-section::-webkit-scrollbar {
-  display: none;
-} */
+.supplements-section {
+  border: 1px solid aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
 
-/* .supplements-section {
- margin: 1.3rem 0;
-} */
+/*Styles for scrollbar*/
+.supplements-section-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+.supplements-section-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+.supplements-section-wrapper::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.supplements-section-wrapper::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 156);
+    box-shadow: 0.06em 0.06em 0.6em white inset;
+    border: 1px solid rgb(193, 192, 192);
+    border-radius: 8px;
+}
