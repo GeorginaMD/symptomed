@@ -15,14 +15,16 @@ export default function SupplementsSection() {
     }, []);
 
     return (
-        <div className="supplements-section-wrapper">
-            <section className="supplements-section">
-                {supplements.map(s => (
-                    <SupplementsCard key={s.slug} supplement={s}/>
-                ))}
-                {/* <SupplementsCard /> */}
-                {/* <Link to="" className="">Display all the supplements</Link> */}
-            </section>
+        <div className="all-supplements">
+            <div className="supplements-section-wrapper">
+                <section className="supplements-section">
+                    {supplements.map(s => (
+                        <SupplementsCard key={s.slug} supplement={s}/>
+                    ))}
+                    {/* <SupplementsCard /> */}
+                    {/* <Link to="" className="">Display all the supplements</Link> */}
+                </section>
+            </div>
             <ButtonHomePage />
         </div>
     )

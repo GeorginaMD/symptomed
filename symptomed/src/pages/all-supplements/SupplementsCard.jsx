@@ -7,7 +7,7 @@ export default function SupplementsCard({ supplement }) {
         <div className="supplement-card">
             <Link to={`/one-supplement/${supplement.slug}`} className="supplement-link"> 
                 <img src={supplement.image} alt={supplement.name} className="supplement-image"/>
-                <h1>{supplement.name}</h1>
+                <h1 className="supplement-card-title">{supplement.name}</h1>
             </Link>
         </div>
     )
