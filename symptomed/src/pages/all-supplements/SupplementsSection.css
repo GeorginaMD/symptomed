@@ -1,5 +1,9 @@
 .supplements-section-wrapper {
+<<<<<<< HEAD
     display: flex;
+=======
+   display: flex;
+>>>>>>> b0b5dd7 (Added display layout and styling for all supplements page)
     flex-direction: column;
     overflow-y: scroll;
     height: 68vh;
@@ -12,6 +16,7 @@
 }
 
 .supplements-section {
+<<<<<<< HEAD
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -28,3 +33,31 @@
 /* .supplements-section {
  margin: 1.3rem 0;
 } */
+=======
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Styles for scrollbar*/
+.supplements-section-wrapper::-webkit-scrollbar {
+    width: 15px;
+}
+.supplements-section-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+.supplements-section-wrapper::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.supplements-section-wrapper::-webkit-scrollbar-thumb {
+    background: rgb(177, 174, 195);
+    box-shadow: 0.06em 0.06em 0.6em white inset;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 8px;
+}
+>>>>>>> b0b5dd7 (Added display layout and styling for all supplements page)

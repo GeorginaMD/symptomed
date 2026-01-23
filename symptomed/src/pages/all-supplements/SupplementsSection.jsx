@@ -15,11 +15,24 @@ export default function SupplementsSection() {
     }, []);
 
     return (
+<<<<<<< HEAD
         <section className="supplements-section">
             {supplements.map(s => (
                 <SupplementsCard key={s.slug} supplement={s}/>
             ))}
             {/* <SupplementsCard /> */}
+=======
+        <div className="all-supplements">
+            <div className="supplements-section-wrapper">
+                <section className="supplements-section">
+                    {supplements.map(s => (
+                        <SupplementsCard key={s.slug} supplement={s}/>
+                    ))}
+                    {/* <SupplementsCard /> */}
+                    {/* <Link to="" className="">Display all the supplements</Link> */}
+                </section>
+            </div>
+>>>>>>> b0b5dd7 (Added display layout and styling for all supplements page)
             <ButtonHomePage />
             {/* <Link to="" className="">Display all the supplements</Link> */}
         </section>
