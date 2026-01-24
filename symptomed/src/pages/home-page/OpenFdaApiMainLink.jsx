@@ -7,9 +7,9 @@ export default function OpenFdaApiMainLink() {
         <section className="open-fda-main-link"> 
             <div className="titles">
                 <h1 className="h1-title-fda">What`s bothering you today? What do you need relief from?</h1>
-                <h2 className="h2-title-fda">Have symptoms? Choose one from the list:</h2>
+                <h2 className="h2-title-fda">Choose your symptoms from the list:</h2>
             </div>
-            <Link to="/open-fda-categories" className="symptoms-link"> Browse Symptoms </Link>
+            <Link to="/open-fda-categories" className="symptoms-link"> See Symptoms </Link>
         </section>
     )
 }
