@@ -8,15 +8,6 @@
   box-shadow: 0.06em 0.06em 0.6em white inset;
   border-radius: 2rem;
   width: 20%;
-  display: flex;
-  flex-direction: column;
-  font-family: "ZenLoop-Regular", sans-serif;
-  font-size: 1em;
-  align-items: center;
-  margin: 1rem;
-  box-shadow: 0.06em 0.06em 0.6em white inset;
-  border-radius: 2rem;
-  width: 20%;
 }
 
 .supplement-link {
@@ -26,25 +17,11 @@
   width: 90%;
   height: auto;
   padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: auto;
-  padding: 1rem 0;
+  
 }
 
-
-@media (max-width:768px) {
-  .supplement-card-title {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width:768px) {
-  .supplement-card-title {
-    font-size: 1.1rem;
-  }
+.supplement-image {
+  border-radius: 2rem;   
 }
 
 .supplement-image:hover {
@@ -57,6 +34,16 @@
   color: rgb(60, 60, 74);
   text-shadow: 0.3px 0.3px 1px rgb(79, 76, 99);
 }
+
+@media (max-width:768px) {
+  .supplement-card-title {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
 /* STYLES FOR MOCKUP DATA: */
 /* .supplement-inner-wrapper {
     display: flex;

@@ -28,29 +28,31 @@
 
 .supplement-image {
     margin: 0 1rem;
+    height: 90%;
 }
-.supplement-image:hover{
-    scale: unset;
-    box-shadow: none;
-}
+
 .supplement-ul-wrapper {
     width: 70%;
     margin: 0 1rem;
     border-radius: 3rem;
     box-shadow: 0.06em 0.06em 0.6em white inset;
 }
+
 .supplement-name-h1 {
     text-align: center;
     margin-top: 1rem;
 }
+
 .supplement-data-ul {
     margin: 0.3rem 1rem 1.5rem 1rem;
     border-radius: 1rem;
 }
+
 .supplement-data-li {
     margin: 0.2rem 1rem;
     font-size: 1.2em;
 }
+
 span {
     text-shadow: 0.3px 0.3px 1px rgb(62, 60, 78);
     font-size: 1.5rem;

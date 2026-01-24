@@ -8,7 +8,7 @@ export default function SupplementCardData({ supplement }) {
     return (
         <div className="supplement-card-wrapper">
             <div className="supplement-card-data">
-                <img src={supplement.image} alt={supplement.name} className="supplement-image"/>
+                <img src={supplement.image} alt={supplement.name} className="supplement-image" style={{scale: "unset", boxShadow: "none" }}/>
                 <div className="supplement-ul-wrapper">
                     <h1 className="supplement-name-h1">{supplement.name}</h1>
                     <ul className="supplement-data-ul">
