@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   font-family: "ZenLoop-Regular", sans-serif;
-<<<<<<< HEAD
   font-size: 1em;
   align-items: center;
   margin: 1rem;
@@ -31,25 +30,6 @@
   .supplement-card-title {
     font-size: 1.1rem;
   }
-=======
-  font-size: 1em;align-items: center;
-  margin: 1rem;
-  box-shadow: 0.06em 0.06em 0.6em white inset;
-  border-radius: 2rem;
-}
-
-.supplement-link {
-  width: 95%;
-  height: auto;
-  padding: 1rem;
-  
-}
-
-.supplement-image {
-  border-radius: 2rem;
-  width: 250px;
-  height: auto;
->>>>>>> b0b5dd7 (Added display layout and styling for all supplements page)
 }
 
 .supplement-image:hover {
