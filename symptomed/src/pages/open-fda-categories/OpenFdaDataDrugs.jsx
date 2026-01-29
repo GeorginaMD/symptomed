@@ -21,7 +21,7 @@ function normalizeDrug(drug) {
 export default function OpenFdaDataDrugs() {
     const { query } = useParams();
     const [drugs, setDrugs] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [error, setError] =useState(null);
 
 
@@ -45,8 +45,7 @@ export default function OpenFdaDataDrugs() {
         .finally(() => setLoading(false))
     }, [query]);
 
-     console.log(drugs);
-
+    if (!query) return null;
     if (loading) return <p className="loading-drugs">Loading drugs, please wait...</p>;
     if (error) return <p className="error-drugs">{error}</p>;
 
