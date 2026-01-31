@@ -18,7 +18,10 @@ export default function SupplementCardData({ supplement }) {
                         <li className="supplement-data-li"><span>SUGGESTIONS: </span>{supplement.suggestions.join(", ")}</li>
                     </ul>
                 </div>
-                <Link to="/all-supplements" className="home-page">Back</Link>
+                <div className="one-supplement-link-buttons">
+                    <Link to="/all-supplements" className="home-page">Back</Link>
+                    <Link to="/" className="home-page">Home Page</Link>
+                </div>
             </div>
         </div>
     )

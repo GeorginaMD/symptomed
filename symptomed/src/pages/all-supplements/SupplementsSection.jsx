@@ -21,8 +21,6 @@ export default function SupplementsSection() {
                     {supplements.map(s => (
                         <SupplementsCard key={s.slug} supplement={s}/>
                     ))}
-                    {/* <SupplementsCard /> */}
-                    {/* <Link to="" className="">Display all the supplements</Link> */}
                 </section>
             </div>
             <ButtonHomePage />

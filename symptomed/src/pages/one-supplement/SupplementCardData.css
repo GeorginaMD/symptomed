@@ -58,6 +58,11 @@ span {
     font-size: 1.5rem;
 }
 
+.one-supplement-link-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 
  /*Styles for scrollbar*/
     .supplement-card-wrapper::-webkit-scrollbar {
