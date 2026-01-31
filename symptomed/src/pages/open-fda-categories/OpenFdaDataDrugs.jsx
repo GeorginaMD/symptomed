@@ -28,31 +28,51 @@ export default function OpenFdaDataDrugs() {
     useEffect(() =>{
         if (!query) return;
 
-        const url = `${BASE_URL}?search=purpose:${query}+NOT+homeopatic&limit=10`;
+        const fetchDrugs = async () => {
+            setLoading(true);
+            setError(null);
+        
+            try {
+                    const url = `${BASE_URL}?search=purpose:${query}+NOT+homeopatic&limit=10`;
+                    const res = await fetch(url);
 
-        setLoading(true);
-        setError(null);
+                    if (!res.ok) { throw new Error("No drugs found for this symptom.");}
 
-        fetch(url)      
-        .then(res => {
-            if (!res.ok) { throw new Error("No results found");}
-            return res.json();})
-        .then(data => {
-            const normalized = data.results?.map(normalizeDrug).filter(Boolean) ?? [];
-            setDrugs(normalized);
-        })
-        .catch(err => setError(err.message))
-        .finally(() => setLoading(false))
+                    const data = await res.json();
+                    const normalized = data.results?.map(normalizeDrug) ?? [];
+
+                    setDrugs(normalized);
+
+                    if (normalized.length === 0) {
+                    throw new Error("No matching drugs available.");
+                    }
+            } catch (err) { 
+                    setError(err.message); 
+            } finally {
+                    setLoading(false);
+            }
+        };
+
+        fetchDrugs();
     }, [query]);
+        
 
     if (!query) return null;
     if (loading) return <p className="loading-drugs">Loading drugs, please wait...</p>;
     if (error) return <p className="error-drugs">{error}</p>;
 
-   
 
     return (
         <div className="fetching-data-links">
+            {/* if (error) {
+                return (
+                <div className="error-drugs">
+                    <h3>We couldn’t find any results</h3>
+                        <p>{error}</p>
+                    <p>Try another symptom.</p>
+                </div>
+                );
+                } */}
             <FdaDrugsSection drugs={drugs}/>
         </div>
     )
