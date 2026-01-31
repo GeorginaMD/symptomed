@@ -5,7 +5,7 @@ import ButtonHomePage from "../../components/ButtonHomePage"
 export default function FdaDrugsSection({drugs}) {
     return (
         <section className="fda-drugs-section">
-            <p className="title-recommended-drugs">These drugs are recommended for your symptoms:</p>
+            <p className="title-recommended-drugs">These drugs are recommended for your {/* {category.symptoms.label} */} symptoms:</p>
             <div className="fda-drugs-section-wrapper">
                 {drugs.map((drug) => (
                     <FdaDrugCardData key={drug.name} drug={drug}/>
