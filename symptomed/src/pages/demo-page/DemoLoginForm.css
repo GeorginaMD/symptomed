@@ -1,0 +1,75 @@
+.demo-form-wrapper {
+    /* border: 1px solid black; */
+    display: flex;
+    height: 66vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-form {
+    /* border: 1px solid blue; */
+    color: #797979;
+    font-family: "ZenLoop-Regular", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(66vh - 4rem);
+    width: 70vw;
+    border-radius: 4rem;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
+}
+
+.demo-p {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.demo-input-wrapper {
+    /* border: 1px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.demo-email-label, .demo-password-label {
+    /* border: 1px solid green; */
+    text-shadow: 0.6px 0.6px 0.4px rgb(79, 76, 99);
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    margin: 0.3rem;
+}
+
+.demo-email, .demo-password {
+    /* border: 1px solid red; */
+    background: none;
+    cursor: default;
+    border: none;
+    border-bottom: 1px solid rgb(79, 76, 99);
+    color: #797979;
+}
+
+.demo-email {
+    width: 21ch;
+    margin: 0 0.7rem;
+}
+
+
+.demo-password {
+    /* border: 1px solid blueviolet; */
+    margin: 0 1.1rem;
+}
+
+.home-page {
+    /* border: 1px solid orange; */
+    background: none;
+    margin: 1rem;
+    /* font-size: 2rem; */
+    /* width: 5em; */
+    border: none;
+}
