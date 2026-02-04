@@ -113,7 +113,7 @@
     cursor: pointer;
     color: #797979;
     font-family: "ZenLoop-Regular", sans-serif;
-    font-size: 1.5rem; /* Smaller for mobile */
+    /* font-size: 1.5rem; */ /* Smaller for mobile */
     transition: scale 0.3s ease-out;
 }
 
