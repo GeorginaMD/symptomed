@@ -2,10 +2,40 @@ import "./DemoHealthDataDashboard.css"
 
 export default function DemoHealthDataDashboard() {
     return (
-        <div>
-            <p>Health data:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in molestiae sed voluptas maxime voluptates. Animi, aut sit magni ipsa vero, rerum et quis id nam similique neque, repellat quaerat.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores non eligendi expedita in inventore, quos corporis est praesentium dolor dignissimos numquam, nobis ad libero atque omnis iste alias ipsum aut!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident totam dolorem ea cum asperiores ipsam modi impedit inventore vitae, sit sint velit porro deserunt, consequatur accusantium beatae at dolores.</p>
+        <div className="demo-health-data-dashboard-wrapper">
+            <p className="p-demo-dashboard">Health Data</p>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-age" className="demo-dashboard-label">AGE</label>
+                <input type="text" id="demo-user-age" className="demo-input"/>
+            </div>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-weight" className="demo-dashboard-label">WEIGHT</label>
+                <input type="text" id="demo-user-weight" className="demo-input"/>
+            </div>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-height" className="demo-dashboard-label">HEIGHT</label>
+                <input type="text" id="demo-user-height" className="demo-input"/>
+            </div>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-sleep" className="demo-dashboard-label">SLEEP</label>
+                <input type="text" id="demo-user-sleep" className="demo-input"/>
+            </div>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-activity" className="demo-dashboard-label">PHYSICAL ACTIVITY</label>
+                <input type="select" id="demo-user-activity" className="demo-input"/>
+            </div>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-blood" className="demo-dashboard-label">BLOOD GROUP</label>
+                <input type="select" id="demo-user-blood" className="demo-input"/>
+            </div>
+            <div className="demo-dashboard-input-wrapper">
+                <label htmlFor="demo-user-supplements" className="demo-dashboard-label">SUPPLEMENTS</label>
+                <input type="textarea" id="demo-user-supplements" className="demo-input"/>
+            </div>
+            <div className="health-data-btn" >
+                <button className="save-health-data">Save</button>
+                <button className="save-health-data">Edit</button>
+            </div>
         </div>
     )
 }
