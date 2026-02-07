@@ -15,6 +15,7 @@ import LoginProfileSection from "./pages/user-dashboard-login/LoginProfileSectio
 import DemoSection from "./pages/demo-page/DemoSection"
 import DemoLoginProfileSection from "./pages/user-dashboard-demo-login/DemoLoginProfileSection"
 import Footer from "./components/Footer"
+import DemoLoginForm from "./pages/demo-page/DemoLoginForm"
 
 function Layout() {
   return (
@@ -73,7 +74,7 @@ const router = createBrowserRouter([
       },
       {
         path: "demo-login-page",
-        element: <DemoSection />
+        element: <DemoLoginForm/>
       },
       {
         path: "user-dashboard-demo-login",
