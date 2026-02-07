@@ -1,0 +1,38 @@
+.demo-login-profile-div-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo-login-profile-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 68vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-login-profile-section {
+    font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.2em;
+    text-shadow: 0.3px 0.3px dimgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 68vh;
+    width: 80vw;
+    border-radius: 4rem;
+    box-shadow: 0.15em 0.15em 0.3em white,
+                    -0.15em -0.15em 0.3em white,
+                    0.15em 0.15em 1em rgb(162, 161, 184) inset,
+                    -0.15em -0.15em 1em rgb(162, 161, 184) inset;
+}
+
+.demo-login-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+    margin-top: 0.5rem;
+}
