@@ -1,8 +1,12 @@
-import { createContext, useState } from 'react'; 
+import { createContext, useContext, useState } from 'react'; 
 
-export const UserContext = createContext(null);
+const UserContext = createContext(null);
 
-const demoUser = {
+export function useUser() {
+    return useContext(UserContext);
+}
+
+const DEMO_USER = {
       name: "Demo User",
       email: "demo-login@example.com",
       password: "000demoPass",
@@ -13,7 +17,7 @@ export function UserProvider({ children }) {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     const loginDemo = () => {
-        setUser(demoUser);
+        setUser(DEMO_USER);
         setIsAuthenticated(true);
     };
 

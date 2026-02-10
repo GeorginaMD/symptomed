@@ -1,14 +1,13 @@
 import "./DemoLoginForm.css"
 import { Link } from "react-router"
-import { UserContext } from "../../context/UserContext"
 import { useNavigate } from "react-router"
-import { useContext } from "react"
+import { useUser } from "../../context/UserContext"
 import "../../components/ButtonHomePage.css"
 import ButtonHomePage from "../../components/ButtonHomePage"
 
 
 export default function DemoLoginForm() {
-    const { loginDemo } = useContext(UserContext);
+    const { loginDemo } = useUser();
     const navigate = useNavigate();
 
     const handleDemoLogin = (e) => {

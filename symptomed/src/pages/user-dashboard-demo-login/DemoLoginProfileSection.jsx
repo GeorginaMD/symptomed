@@ -2,14 +2,13 @@ import "./DemoLoginProfileSection.css"
 import DemoUserProfileDataDashboard from "./DemoUserProfileDataDashboard"
 import DemoHealthDataDashboard from "./DemoHealthDataDashboard"
 import ButtonHomePage from "../../components/ButtonHomePage"
-import { useContext } from "react"
-import { UserContext } from "../../context/UserContext"
+import { useUser } from "../../context/UserContext"
 import { useNavigate } from "react-router"
 
 
 export default function DemoLoginProfileSection() {
 
-    const { logout } = useContext(UserContext);
+    const { logout } = useUser();
     const navigate = useNavigate();
     const handleDemoLogout = () => {
         logout();
