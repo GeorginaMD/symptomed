@@ -1,6 +1,6 @@
-import "./DemoUserProfileData.css"
+import "./DemoUserProfileDataDashboard.css"
 
-export default function DemoUserProfileData() {
+export default function DemoUserProfileDataDashboard() {
     return (
         <div className="demo-user-profile-data-wrapper">
             <p className="p-demo-dashboard">Profile Data</p>

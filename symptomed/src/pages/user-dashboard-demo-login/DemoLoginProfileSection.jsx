@@ -1,5 +1,5 @@
 import "./DemoLoginProfileSection.css"
-import DemoUserProfileData from "./DemoUserProfileData"
+import DemoUserProfileDataDashboard from "./DemoUserProfileDataDashboard"
 import DemoHealthDataDashboard from "./DemoHealthDataDashboard"
 import ButtonHomePage from "../../components/ButtonHomePage"
 import { useContext } from "react"
@@ -21,7 +21,7 @@ export default function DemoLoginProfileSection() {
             <section className="demo-login-profile-section-wrapper">
                 <div className="demo-login-profile-section">
                     <DemoHealthDataDashboard />
-                    <DemoUserProfileData />
+                    <DemoUserProfileDataDashboard />
                 </div>
             </section>
             <div className="demo-login-nav-buttons">
