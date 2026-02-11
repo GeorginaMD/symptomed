@@ -6,7 +6,7 @@ export default function DemoHealthDataDashboard() {
 
     const { demoHealth, updateDemoHealth } = useUser();
 
-    const [healthData, setHealthData] = useState(demoHealth);
+    const [healthData, setHealthData] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
 
     useEffect(() => {
