@@ -52,6 +52,10 @@ export function UserProvider({ children }) {
         setIsAuthenticated(false);
     };
 
+    const updateDemoHealth = (newHealth) => {
+        setDemoHealth(newHealth);
+    };
+
     const value = {
         user,
         isAuthenticated,
@@ -59,6 +63,7 @@ export function UserProvider({ children }) {
         demoProfile,
         loginDemo,
         logout,
+        updateDemoHealth,
     };
 
     return (

@@ -26,6 +26,7 @@ export default function DemoLoginProfileSection() {
             <div className="demo-login-nav-buttons">
                     <button onClick={handleDemoLogout} className="home-page">Logout</button>
                     <ButtonHomePage />
+                    {/* <Link to="/user-dashboard-demo-login">Back to Dashboard</Link> */}
             </div>
         </div>
     )
