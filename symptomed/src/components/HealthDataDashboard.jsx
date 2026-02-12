@@ -1,4 +1,4 @@
-import "./HealthDataDashboard.css"
+/* import "./HealthDataDashboard.css"
 
 export default function HealthDataDashboard() {
     return (
@@ -10,4 +10,4 @@ export default function HealthDataDashboard() {
             </section>
         </div>
     )
-}
+} */

@@ -1,14 +1,17 @@
-import HealthDataDashboard from "../../components/HealthDataDashboard"
-import UserProfileData from "../../components/UserProfileData"
+/* import HealthDataDashboard from "../../components/HealthDataDashboard"
+import UserProfileData from "../../components/UserProfileData" */
 import "./LoginProfileSection.css"
 import ButtonHomePage from "../../components/ButtonHomePage"
 
 export default function LoginProfileSection() {
     return (
         <section className="login-profile-section">
-            <UserProfileData />
-            <HealthDataDashboard />
+            
             <ButtonHomePage />
         </section>
     )
 }
+
+
+{/* <UserProfileData />
+<HealthDataDashboard /> */}

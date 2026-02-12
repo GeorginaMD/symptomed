@@ -9,7 +9,7 @@ import FdaDrugsSection from "./pages/open-fda-drugs/FdaDrugsSection"
 import SupplementsSection from "./pages/all-supplements/SupplementsSection"
 import OneSupplementSection from "./pages/one-supplement/OneSupplmentSection"
 import RegisterSection from "./pages/register-page/RegisterSection"
-import RegisterProfileSection from "./pages/user-dashboard-registration/RegisterProfileSection"
+import RegisterDashboardSection from "./pages/user-dashboard-registration/RegisterDashboardSection"
 import LoginSection from "./pages/login-page/LoginSection"
 import LoginProfileSection from "./pages/user-dashboard-login/LoginProfileSection"
 import DemoSection from "./pages/demo-page/DemoSection"
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       },
       {
         path: "user-dashboard-registration",
-        element: <RegisterProfileSection />
+        element: <RegisterDashboardSection />
       },
       {
         path: "login-page",

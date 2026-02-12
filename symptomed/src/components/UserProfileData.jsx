@@ -1,4 +1,4 @@
-import "./UserProfileData.css"
+/* import "./UserProfileData.css"
 
 export default function UserProfileData() {
     return (
@@ -10,4 +10,4 @@ export default function UserProfileData() {
             </form>
         </div>
     )
-}
+} */
