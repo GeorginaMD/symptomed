@@ -3,6 +3,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import supplementsRoutes from "./routes/supplements.js";
+import authRoutes from "./routes/authRoutes.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -11,6 +13,7 @@ const port = process.env.PORT;
 
 app.use(express.json());
 app.use(cors());
+app.use(cookieParser());
 
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on("connected", () => {
@@ -26,6 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/supplements", supplementsRoutes);
+app.use("/api/auth", authRoutes);
 
 //start the express server
 app.listen(port, () => {
