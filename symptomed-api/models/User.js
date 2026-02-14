@@ -15,19 +15,18 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
-      minlength: 6,
+      minLength: 8,
     },
   },
   { timestamps: true },
 );
 
 //hash passwords before saving:
-userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return next();
+userSchema.pre("save", async function () {
+  if (!this.isModified("password")) return;
 
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
-  next();
 });
 
 //compare passwords during login:

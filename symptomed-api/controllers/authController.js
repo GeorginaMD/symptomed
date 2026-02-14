@@ -1,5 +1,5 @@
-import User from "../models/User";
-import jwt from "jasonwebtoken";
+import User from "../models/User.js";
+import jwt from "jsonwebtoken";
 import { validationResult } from "express-validator";
 
 //REGISTER controller:
@@ -22,6 +22,7 @@ export const registerUser = async (req, res) => {
     const user = await User.create({ email, password });
     res.status(201).json({ message: "User registered succesfully" });
   } catch (error) {
+    console.log("REGISTER ERROR:", error);
     res.status(500).json({ message: "Server error" });
   }
 };
@@ -42,7 +43,7 @@ export const loginUser = async (req, res) => {
       return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    const isMatch = await user.comparePassword(password);
+    const isMatch = await user.comparePasswords(password);
     if (!isMatch) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
@@ -61,6 +62,7 @@ export const loginUser = async (req, res) => {
     });
     res.json({ message: "Login succesfull" });
   } catch (error) {
+    console.log("LOGIN ERROR:", error);
     res.status(500).json({ message: "Server error" });
   }
 };

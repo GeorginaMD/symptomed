@@ -3,8 +3,9 @@ import {
   registerUser,
   loginUser,
   logoutUser,
-} from "../controllers/authController";
+} from "../controllers/authController.js";
 import { body } from "express-validator";
+import { protect } from "../middleware/authMiddleware.js";
 
 const router = express.Router();
 
@@ -42,11 +43,15 @@ router.post(
       .withMessage("Please provide a valid email")
       .normalizeEmail(),
 
-    body("password".notEmpty().withMessage("Password is required")),
+    body("password").notEmpty().withMessage("Password is required"),
   ],
   loginUser,
 );
 
 router.post("/logout", logoutUser);
+
+router.get("/me", protect, (req, res) => {
+  res.status(200).json({ message: "Protected route accessed", user: req.user });
+});
 
 export default router;
