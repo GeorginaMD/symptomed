@@ -50,7 +50,7 @@ router.post(
 
 router.post("/logout", logoutUser);
 
-router.get("/me", protect, (req, res) => {
+router.get("/profile", protect, (req, res) => {
   res.status(200).json({ message: "Protected route accessed", user: req.user });
 });
 
