@@ -40,12 +40,14 @@ export const loginUser = async (req, res) => {
     const user = await User.findOne({ email });
 
     if (!user) {
-      return res.status(401).json({ message: "Invalid credentials" });
+      return res.status(401).json({ message: "Invalid credentials-no user!" });
     }
 
     const isMatch = await user.comparePasswords(password);
     if (!isMatch) {
-      return res.status(401).json({ message: "Invalid credentials" });
+      return res
+        .status(401)
+        .json({ message: "Invalid credentials-not a match!" });
     }
 
     //if password ^ is correct, create token:
