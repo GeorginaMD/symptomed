@@ -6,6 +6,7 @@ import { validationResult } from "express-validator";
 export const registerUser = async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
+    console.log("Validation errors", errors.array());
     return res.status(400).json({
       errors: errors.array(),
     });
@@ -20,7 +21,22 @@ export const registerUser = async (req, res) => {
     }
     //create user:
     const user = await User.create({ email, password });
-    res.status(201).json({ message: "User registered succesfully" });
+    //create token:
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+      expiresIn: "7d",
+    });
+    //send token as http-only cookie (stored in browser):
+    res.cookie("token", token, {
+      httpOnly: true,
+      secure: false, //true for production
+      sameSite: "strict",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
+
+    res.status(201).json({
+      _id: user._id,
+      email: user.email,
+    });
   } catch (error) {
     console.log("REGISTER ERROR:", error);
     res.status(500).json({ message: "Server error" });
@@ -62,7 +78,10 @@ export const loginUser = async (req, res) => {
       sameSite: "strict",
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
-    res.json({ message: "Login succesfull" });
+    res.status(201).json({
+      _id: user._id,
+      email: user.email,
+    });
   } catch (error) {
     console.log("LOGIN ERROR:", error);
     res.status(500).json({ message: "Server error" });
