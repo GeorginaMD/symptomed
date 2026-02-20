@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import supplementsRoutes from "./routes/supplements.js";
 import authRoutes from "./routes/authRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
@@ -35,6 +36,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/supplements", supplementsRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 //start the express server
 app.listen(port, () => {
