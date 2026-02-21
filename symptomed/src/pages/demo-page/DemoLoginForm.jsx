@@ -1,13 +1,12 @@
 import "./DemoLoginForm.css"
-import { Link } from "react-router"
 import { useNavigate } from "react-router"
-import { useUser } from "../../context/UserContext"
+import { useAuth } from "../../context/AuthContext"
 import "../../components/ButtonHomePage.css"
 import ButtonHomePage from "../../components/ButtonHomePage"
 
 
 export default function DemoLoginForm() {
-    const { loginDemo } = useUser();
+    const { loginDemo } = useAuth();
     const navigate = useNavigate();
 
     const handleDemoLogin = (e) => {
@@ -35,7 +34,6 @@ export default function DemoLoginForm() {
                     <button type="submit" className="home-page">
                         Demo Login
                     </button>
-            {/*  <Link to="/user-dashboard-demo-login" className="link"> ? ? ?</Link> */}
                 </form>
             </div>
             <ButtonHomePage />
