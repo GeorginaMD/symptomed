@@ -1,4 +1,5 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router"
+import { useAuth } from "./context/AuthContext";
 import "./styles/reset.css"
 import "./App.css"
 import Navbar from "./components/Navbar"
@@ -88,6 +89,17 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  const { loading } = useAuth();
+
+  if (loading) { 
+    return (
+      <div className="server-loading">
+        <p className="p-server-loading">Connecting to server...</p>
+        <p className="p-server-loading">This may take ~30 seconds.</p>
+      </div>
+    );
+  }
+
   return (
     <>
       <RouterProvider router={router} />
