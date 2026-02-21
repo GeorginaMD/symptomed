@@ -21,8 +21,13 @@
     width: 33%;
 }
 
+.p-login-current-user {
+    font-family: "ZenLoop-Regular", sans-serif;
+    text-shadow: none;
+}
 
-@media (max-width: 768px)/* , (max-width: 480px) */ {
+
+@media (max-width: 768px) {
     .Navbar {
         display: flex;
         flex-direction: column;
