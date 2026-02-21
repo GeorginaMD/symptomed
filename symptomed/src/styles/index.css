@@ -1,11 +1,11 @@
 @font-face {
   font-family: "ZenLoop-Italic";
-  src: url("/symptomed/public/fonts/ZenLoop-Italic.ttf") format("truetype-variations");
+  src: url("/fonts/ZenLoop-Italic.ttf") format("truetype");
   font-display: swap;  
 }
 @font-face {
   font-family: "ZenLoop-Regular";
-  src: url("/symptomed/public/fonts/ZenLoop-Regular.ttf") format("truetype-variations");
+  src: url("/fonts/ZenLoop-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
