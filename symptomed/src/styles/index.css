@@ -1,30 +1,12 @@
 @font-face {
   font-family: "ZenLoop-Italic";
-  src: url("src/fonts/ZenLoop-Italic.ttf") format("truetype-variations");
+  src: url("/symptomed/public/fonts/ZenLoop-Italic.ttf") format("truetype-variations");
   font-display: swap;  
 }
 @font-face {
   font-family: "ZenLoop-Regular";
-  src: url("src/fonts/ZenLoop-Regular.ttf") format("truetype-variations");
+  src: url("/symptomed/public/fonts/ZenLoop-Regular.ttf") format("truetype-variations");
   font-display: swap;
-}
-@font-face {
-    font-family: "Dosis";
-    src: url("src/fonts/Dosis-VariableFont_wght.ttf") format("truetype-variations");
-    font-display: swap;
-    /* font-weight: 200 800; */
-}
-@font-face {
-    font-family: "Lora-Italic";
-    src: url("src/fonts/Lora-Italic-VariableFont_wght.ttf") format("truetype-variations");
-    font-display: swap;
-    /* font-weight: 400 700; */
-}
-@font-face {
-    font-family: "Lora";
-    src: url("src/fonts/Lora-VariableFont_wght.ttf") format("truetype-variations");
-    font-display: swap;
-    /* font-weight: 400 700; */
 }
 
 :root {
