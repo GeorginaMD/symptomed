@@ -9,13 +9,14 @@ import FdaDrugsSection from "./pages/open-fda-drugs/FdaDrugsSection"
 import SupplementsSection from "./pages/all-supplements/SupplementsSection"
 import OneSupplementSection from "./pages/one-supplement/OneSupplmentSection"
 import RegisterSection from "./pages/register-page/RegisterSection"
-import RegisterDashboardSection from "./pages/user-dashboard-registration/RegisterDashboardSection"
 import LoginSection from "./pages/login-page/LoginSection"
 import LoginProfileSection from "./pages/user-dashboard-login/LoginProfileSection"
 import DemoSection from "./pages/demo-page/DemoSection"
 import DemoLoginProfileSection from "./pages/user-dashboard-demo-login/DemoLoginProfileSection"
 import Footer from "./components/Footer"
 import DemoLoginForm from "./pages/demo-page/DemoLoginForm"
+import ProtectedRoute from "./components/ProtectedRoute";
+
 
 function Layout() {
   return (
@@ -61,25 +62,27 @@ const router = createBrowserRouter([
         element: <RegisterSection />
       },
       {
-        path: "user-dashboard-registration",
-        element: <RegisterDashboardSection />
-      },
-      {
         path: "login-page",
         element: <LoginSection />
-      },
-      {
-        path: "user-dashboard-login",
-        element: <LoginProfileSection />
       },
       {
         path: "demo-login-page",
         element: <DemoLoginForm/>
       },
       {
-        path: "user-dashboard-demo-login",
-        element: <DemoLoginProfileSection />
-      }
+      element: <ProtectedRoute />,
+      children: [
+        {
+          path: "user-dashboard-login",
+          element: <LoginProfileSection />
+        },
+        {
+          path: "user-dashboard-demo-login",
+          element: <DemoLoginProfileSection />
+        }
+      ]
+},
+
     ]
   }
 ])
