@@ -44,7 +44,7 @@ export default function HealthDataDashboard() {
 
     const handleSave = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/users/health", {
+            const response = await fetch("https://symptomed.onrender.com/api/users/health", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

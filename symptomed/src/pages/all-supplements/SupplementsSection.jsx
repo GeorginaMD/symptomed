@@ -9,7 +9,7 @@ export default function SupplementsSection() {
     const  [supplements, setSupplements] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/supplements")
+        fetch("https://symptomed.onrender.com/api/supplements")
         .then(res => res.json())
         .then(data => setSupplements(data));
     }, []);

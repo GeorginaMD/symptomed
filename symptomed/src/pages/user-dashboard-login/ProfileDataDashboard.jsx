@@ -43,7 +43,7 @@ export default function ProfileDataDashboard() {
 
     const handleSave = async () => {
         try {
-            const response = await fetch("http://localhost:3000/api/users/profile", {
+            const response = await fetch("https://symptomed.onrender.com/api/users/profile", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
