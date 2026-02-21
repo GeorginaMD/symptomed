@@ -1,5 +1,4 @@
 import "./OpenFdaDataDrugs.css"
-import { Link } from "react-router"
 import { useParams } from "react-router";
 import { useState, useEffect } from "react"
 import FdaDrugsSection from "../open-fda-drugs/FdaDrugsSection";
@@ -18,6 +17,7 @@ function normalizeDrug(drug) {
 
 //helper func. - outside, not recreated on every render inside useEffect
 //and not inside JSX, which should only consume data, not transform.
+
 export default function OpenFdaDataDrugs() {
     const { query } = useParams();
     const [drugs, setDrugs] = useState([]);
@@ -64,15 +64,6 @@ export default function OpenFdaDataDrugs() {
 
     return (
         <div className="fetching-data-links">
-            {/* if (error) {
-                return (
-                <div className="error-drugs">
-                    <h3>We couldn’t find any results</h3>
-                        <p>{error}</p>
-                    <p>Try another symptom.</p>
-                </div>
-                );
-                } */}
             <FdaDrugsSection drugs={drugs}/>
         </div>
     )
