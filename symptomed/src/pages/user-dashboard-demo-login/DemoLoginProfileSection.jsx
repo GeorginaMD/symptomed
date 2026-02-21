@@ -2,13 +2,12 @@ import "./DemoLoginProfileSection.css"
 import DemoUserProfileDataDashboard from "./DemoUserProfileDataDashboard"
 import DemoHealthDataDashboard from "./DemoHealthDataDashboard"
 import ButtonHomePage from "../../components/ButtonHomePage"
-import { useUser } from "../../context/UserContext"
+import { useAuth } from "../../context/AuthContext"
 import { useNavigate } from "react-router"
-
 
 export default function DemoLoginProfileSection() {
 
-    const { logout } = useUser();
+    const { logout } = useAuth();
     const navigate = useNavigate();
     const handleDemoLogout = () => {
         logout();
@@ -26,7 +25,6 @@ export default function DemoLoginProfileSection() {
             <div className="demo-login-nav-buttons">
                     <button onClick={handleDemoLogout} className="home-page">Logout</button>
                     <ButtonHomePage />
-                    {/* <Link to="/user-dashboard-demo-login">Back to Dashboard</Link> */}
             </div>
         </div>
     )

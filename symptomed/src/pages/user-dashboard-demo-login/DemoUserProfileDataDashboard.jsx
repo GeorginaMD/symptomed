@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useUser } from "../../context/UserContext"
+import { useAuth } from "../../context/AuthContext"
 import "./DemoUserProfileDataDashboard.css"
 
 export default function DemoUserProfileDataDashboard() {
 
-    const { demoProfile, updateDemoProfile } = useUser();
+    const { demoProfile, updateDemoProfile } = useAuth();
 
     const [profileData, setProfieData] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
