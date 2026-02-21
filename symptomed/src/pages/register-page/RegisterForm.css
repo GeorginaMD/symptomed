@@ -1,5 +1,4 @@
 .register-form-wrapper {
-    border: 1px solid blue;
     display: flex;
     height: 68vh;
     flex-direction: column;
@@ -8,7 +7,6 @@
 }
 
 .register-form {
-    border: 1px solid red;
     color: #797979;
     font-family: "ZenLoop-Regular", sans-serif;
     display: flex;
