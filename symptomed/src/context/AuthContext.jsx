@@ -34,10 +34,10 @@ export const AuthProvider = ({ children }) => {
     const [demoProfile, setDemoProfile] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    //on loading check auth
+    //on loading check auth 
     const checkAuth = async () => {
         try {
-            const res = await fetch("http://localhost:3000/api/auth/profile", {
+            const res = await fetch("https://symptomed.onrender.com/api/auth/profile", {
                 credentials: "include"
             });
 
@@ -57,7 +57,7 @@ export const AuthProvider = ({ children }) => {
     //register
     const register = async (email, password) => {
     try {
-        const res = await fetch("http://localhost:3000/api/auth/register", {
+        const res = await fetch("https://symptomed.onrender.com/api/auth/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -83,7 +83,7 @@ export const AuthProvider = ({ children }) => {
     //login
     const login = async (email, password) => {
         try {
-            const res = await fetch("http://localhost:3000/api/auth/login", {
+            const res = await fetch("https://symptomed.onrender.com/api/auth/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -119,7 +119,7 @@ export const AuthProvider = ({ children }) => {
     //logout
     const logout = async () => {
         try {
-            await fetch("http://localhost:3000/api/auth/logout", {
+            await fetch("https://symptomed.onrender.com/api/auth/logout", {
             method: "POST",
             credentials: "include",
             });
