@@ -2,7 +2,7 @@
 > **MVP Version** — A web application for exploring drugs and supplements based on health symptoms and conditions. This project is actively being developed and expanded.
 
 ## Live Demo
-- **Try the app here:** 
+- **Try the app here: https://symptomed.vercel.app ** 
 > The backend is hosted on Render's free tier. The first request after a period of inactivity may take **~30–60 seconds** to respond while the server wakes up. Subsequent requests will be fast.
 
 ##  About

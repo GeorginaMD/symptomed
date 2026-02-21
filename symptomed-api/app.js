@@ -12,6 +12,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 
+app.set("trust proxy", 1);
 app.use(express.json());
 app.use(cookieParser());
 app.use(

@@ -95,7 +95,7 @@ function App() {
     return (
       <div className="server-loading">
         <p className="p-server-loading">Connecting to server...</p>
-        <p className="p-server-loading">This may take ~30 seconds.</p>
+        <p className="p-server-loading">This may take ~ 30-50 seconds.</p>
       </div>
     );
   }
