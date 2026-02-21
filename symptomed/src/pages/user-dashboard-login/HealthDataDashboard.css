@@ -1,0 +1,119 @@
+.health-data-dashboard-wrapper, .profile-data-dashboard-wrapper  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    box-shadow: 0.06em 0.06em 0.6em white inset;
+    border-radius: 3rem;
+    height: calc(68vh - 6rem);
+    width: 45%;
+}
+
+.dashboard-input-wrapper {
+    margin: 0.2rem;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+}
+
+.p-dashboard {
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+    margin-top: 0.5rem;
+}
+.dashboard-label {
+    text-align: center;
+    width: 40%;
+    text-wrap: nowrap;
+}
+
+.health-input, .profile-input {
+    background: rgb(227, 227, 239);
+    box-shadow: inset 0.6px 0.6px white,
+                inset -0.6px -0.6px white;
+    flex: 1;
+    border: none;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.save-health-data, .save-profile-data {
+    border: 1px solid white;
+    box-shadow: 0.06em 0.06em 0.6em white inset;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: none;
+    width: 4rem;
+    margin: 0.7rem;
+}
+
+.save-health-data:hover, .save-profile-data:hover {
+    scale: 1.05;
+}
+
+.health-data-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1124px) {
+    .health-data-dashboard-wrapper, .profile-data-dashboard-wrapper {
+        height: 60vh;
+    }
+    .demo-dashboard-input-wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 800px) {
+    .login-profile-section-wrapper {
+        height: 60vh;
+    }
+    .login-profile-section {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+    .dashboard-input-wrapper {
+        width: 75%;
+    }
+    .health-data-dashboard-wrapper, .profile-data-dashboard-wrapper {
+        height: 58vh;
+        width: 90%;
+        margin: 0.5rem;
+    }
+    .health-input::placeholder {
+        font-size: 0.8em;
+        font-family: "ZenLoop-Italic", sans-serif;
+    }
+
+    /*Styles for scrollbar*/
+    .login-profile-section::-webkit-scrollbar {
+        width: 15px;
+    }
+    .login-profile-section::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+    .login-profile-section::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+    .login-profile-section::-webkit-scrollbar-thumb {
+        background: rgb(177, 174, 195);
+        box-shadow: 0.06em 0.06em 0.6em white inset;
+        border: 1px solid rgb(255, 254, 254);
+        border-radius: 8px;
+}
+}
+
+@media (max-width: 430px) {
+    .dashboard-input-wrapper {
+        width: 90%;
+    }
+    
+}
