@@ -13,14 +13,14 @@ const app = express();
 const port = process.env.PORT;
 
 app.set("trust proxy", 1);
-app.use(express.json());
-app.use(cookieParser());
 app.use(
   cors({
     origin: ["http://localhost:5173", "https://symptomed.vercel.app"],
     credentials: true,
   }),
 );
+app.use(express.json());
+app.use(cookieParser());
 
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on("connected", () => {
