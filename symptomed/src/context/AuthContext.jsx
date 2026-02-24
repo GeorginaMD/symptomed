@@ -79,7 +79,6 @@ export const AuthProvider = ({ children }) => {
     }
 };
 
-
     //login
     const login = async (email, password) => {
         try {
@@ -114,7 +113,6 @@ export const AuthProvider = ({ children }) => {
     const updateDemoProfile = (newProfile) => {
         setDemoProfile(newProfile);
     };
-
 
     //logout
     const logout = async () => {
