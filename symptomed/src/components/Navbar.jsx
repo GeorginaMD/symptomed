@@ -14,6 +14,14 @@ export default function Navbar() {
         navigate("/", {replace: true});
     }
 
+    const handleDashboard = () => {
+        if (user?.email === "demo-login@example.com") {
+            navigate("user-dashboard-demo-login");
+        } else {
+            navigate("/user-dashboard-login");
+        }
+    };
+
     return (
     <div>
         <nav className="Navbar">
@@ -22,6 +30,7 @@ export default function Navbar() {
                 {user && (
                     <>
                         <span className="p-login-current-user">{user.email}</span>
+                        <button onClick={handleDashboard} className="home-page">Dashboard</button>
                         <button onClick={handleLogout} className="home-page">Logout</button>
                     </>
                 )}
@@ -33,4 +42,3 @@ export default function Navbar() {
     </div>
     )
 }
-
