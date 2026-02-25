@@ -65,9 +65,12 @@
     .demo-dashboard-input-wrapper {
         width: 85%;
     }
+    .dashboard-label {
+        font-size: 0.8em;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
     .login-profile-section-wrapper {
         height: 60vh;
     }
