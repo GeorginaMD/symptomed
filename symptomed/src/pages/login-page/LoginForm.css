@@ -59,3 +59,13 @@
 .login-password {
     margin: 0 1.1rem;
 }
+
+@media (max-width: 768px) {
+    .login-form-wrapper {
+        height: 57vh;
+    }
+    .login-form {
+        height: 55vh;
+    }
+}
+

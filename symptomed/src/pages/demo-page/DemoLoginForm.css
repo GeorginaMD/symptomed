@@ -70,22 +70,27 @@
 }
 
 @media (max-width: 770px) {
-.demo-p {
+    .demo-form-wrapper {
+         height: 60vh;
+    }
+    .demo-form {
+        width: 85vw;
+        margin: auto;
+    }
+    .demo-p {
         margin: 0 1rem;
     }
-}
-
-@media (max-width: 560px) {
-    .demo-form-wrapper, .demo-form {
-        height: 60vh;
-    }  
     .demo-p, .demo-email-label, .demo-password-label {
         font-size: 1.3em;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
+    .demo-form {
+        width: 85vw;
+        margin: auto;
+    }
     .demo-p, .demo-email-label, .demo-password-label {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }

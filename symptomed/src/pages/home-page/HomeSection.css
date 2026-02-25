@@ -29,7 +29,11 @@
 
 
 @media (max-width: 768px) {
+    .home-section {
+        height: 70vh;
+    }
     .home-section-wrapper {
+        height: 60vh;
         border-radius: 2rem;
         box-shadow: 0.15em 0.15em 0.3em white,
                     -0.15em -0.15em 0.3em white,
@@ -52,7 +56,7 @@
 @media (max-width: 480px) {
     .home-section-wrapper {
         width: 85vw;
-        align-content: center;
+        margin: auto;
     }
 }
 
