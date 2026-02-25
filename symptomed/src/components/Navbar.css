@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.7rem;
+    /* margin-top: 0.7rem; */
 }
 
 .h1 {
@@ -23,9 +23,21 @@
 
 .p-login-current-user {
     font-family: "ZenLoop-Regular", sans-serif;
+    font-size: 1.5em;
     text-shadow: none;
+    text-wrap: nowrap;
 }
 
+@media (max-width: 1024px) {
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .p-login-current-user {
+        font-size: 1.2em;
+    }
+}
 
 @media (max-width: 768px) {
     .Navbar {
@@ -37,12 +49,15 @@
         width: 100vw;
     }
     .h1 {
-        width: 100wv;
+        width: 100vw;
         align-content: flex-start;
     }
     .nav-ul {
         display: flex;
         justify-content: center;
         width: 100vw;
+    }
+    .p-login-current-user {
+        font-size: 1em;
     }
 }
