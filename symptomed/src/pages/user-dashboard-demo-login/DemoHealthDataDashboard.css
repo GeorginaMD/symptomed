@@ -111,5 +111,7 @@
     .demo-dashboard-input-wrapper {
         width: 90%;
     }
-    
+    .demo-dashboard-label {
+        font-size: 0.8em;
+    }
 }
