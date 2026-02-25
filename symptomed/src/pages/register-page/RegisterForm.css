@@ -69,3 +69,12 @@
     margin: 1rem 0;
     font-size: 1.2em;
 }
+
+@media (max-width: 768px) {
+    .register-form-wrapper {
+        height: 57vh;
+    }
+    .register-form {
+        height: 55vh;
+    }
+}
