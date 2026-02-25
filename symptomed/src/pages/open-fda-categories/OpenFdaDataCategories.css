@@ -1,22 +1,33 @@
+.positioning-categories-div {
+    display: flex;
+    height: 66vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .categories-wrapper {
     display: flex;
     flex-direction: row;
+    height: 100%;
+    width: 97%;
     align-items: center;
-    justify-content: center;
-    height: 50vh;
+    justify-content: start;
+    overflow-x: scroll;
     font-family: "ZenLoop-Regular", sans-serif;
     font-size: 1.4em;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .category-block {
+    justify-content: center;
     border-radius: 2rem;
     box-shadow: 0.06em 0.06em 0.6em white inset; 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 0.3rem;
-    margin: 0 0.1rem;
+    margin: 0 0.2rem;
 }
 .drug-category {
     background: none;
@@ -26,8 +37,9 @@
     flex-direction: column;
     cursor: pointer;
     width: 10rem;
-    height: 18rem;
     position: relative;
+    place-items: center;
+    margin: 0.3rem 0;
 }
 .drug-image {
     width: auto;
@@ -35,6 +47,7 @@
     box-sizing: border-box;
     padding: 0.4rem 0.2rem;
     border-radius: 2rem;
+    /* margin-bottom: 0.5em; */
 }
 .category-name {
     top: 80%;
@@ -64,7 +77,8 @@
     border-right: rgb(184, 177, 161);
     border-radius: 1em;
     margin: 0.05em 0.05em;
-    font-size: 1em;
+    font-size: 0.9em;
+    line-height: normal;
     padding: 0 0.2em;
     color: rgb(60, 60, 74);
     box-shadow: 0.06em 0.06em 0.6em white inset;
@@ -92,55 +106,59 @@
     border-radius: 8px;
 }
 
-@media (max-width: 1475px) {
+@media (max-width: 1024px) {
     .categories-wrapper {
-    height: 70vh;
-    overflow-x: scroll;
-    justify-content: start;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-}
-.category-block {
-    justify-content: center;
-}
-.drug-category {
-    width: 10rem;
-    height: 18rem;
-    place-items: center;
-    margin: 0.3rem 0;
-}
-.drug-image {
-    margin-bottom: 0.5em ;
-}
-.category-name {
-    font-size: 1.2em;
-}
-.symptom-link {
-    font-size: large;
-}
+        width: 93%;
+        height: 99%;
+        align-items: center;
+        justify-content: start;
+    }
+    .category-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 90%;
+    }
+    .symptoms-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .symptom-link {
+        font-size: large;
+        margin: 0.3rem;
+    }
 }
 
 @media (max-width: 768px) {
 .categories-wrapper {
     display: grid;
-    height: 60vh;
+    height: calc(65vh - 5.5rem);
+    width: 100%;
     overflow-y: scroll;
     border-radius: 2rem;
     place-items: center;
     justify-content: center;
 }
 .category-block {
+    display: flex;
+    flex-direction: row;
+    height: 98%;
+    width: 90%;
     margin: 0.2rem 0;
-    width: 100%;
+    padding: 0.5rem;
 }
 .drug-category {
-    height: 50vh;
-    width: 100%;
     place-items: center;
     margin: 0.3rem 0.3rem;
+    width: 65%;
+    height: 95%;
 }
 .category-name {
     font-size: 1em;
+}
+.symptoms-block {
+        display: flex;
+        flex-direction: column;
 }
 }
 
@@ -153,10 +171,14 @@
         place-items: center;
     }
     .category-block {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        }
+        height: 93%;
+    }
     .drug-category{
-        height: 40vh;
+        padding: 0.2rem 0;
+        margin: 0;
         width: 80%;
     }
     .drug-image {
@@ -164,11 +186,15 @@
         height: auto;
     }
     .category-name {
-        font-size: 0.8em;
+        font-size: 1em;
         text-wrap: nowrap;
         position: static;
     }
     .symptom-link {
-        font-size: 0.7em;
+        font-size: 1em;
+    }
+    .symptoms-block {
+        display: flex;
+        flex-direction: row;
     }
 }

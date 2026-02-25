@@ -91,68 +91,27 @@ export default function OpenFdaDataCategories() {
     ]
  
     return (
-        <div className="categories-wrapper">
-        {categories.map(category => ( 
-            <div className="category-block" key={category.id}>
-                <button className="drug-category" onClick={() => toggleCategory(category.id)}>
-                    <img src={`/images/drugs/${category.name.replace(/ & | /g, "-")}.webp`} alt="" className="drug-image"/>
-                    <h2 className="category-name">{category.name}</h2>
-                </button>
-            {openCategory === category.id && (
-                <div className="symptoms-block">
-                {category.symptoms.map(symptom => (
-                    <Link key={symptom.query} to={`/open-fda-drugs/${symptom.query}`} className="symptom-link">
-                        {symptom.label}
-                    </Link>
-                ))}
-                </div>
-            )}
-            </div>
-        ))
-        }
-        </div>
-    )
-}
-
-
-
-            {/* <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/Cold-Allergy.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">Cold & Allergy</h2>
-            </button>
-            <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/Digestive-Issues.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">Digestive Issues</h2>
-            </button>
-            <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/Pain-Inflamation.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">Pain & Inflamation</h2>
-            </button>
-            <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/Sleep-Energy.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">Sleep & Energy</h2>
-            </button>
-            <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/Skin-Conditions.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">Skin Conditions</h2>
-            </button>
-            <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/Eye-Ear.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">Eye & Ear</h2>
-            </button>
-            <button className="drug-category" onClick={() => toggleCategory("")}>
-                <img src="./images/drugs/First-Aid.webp" alt="" className="drug-image"/>
-                <h2 className="category-name">First Aid</h2>
-            </button> */}
-        
-
-
-/* {openCategory === "cold" && (
-                <div>
-                    {categories.find(c => c.id === "cold").symptoms.map(symptom => (
-                        <Link to={`/open-fda-drugs`} key={symptom.query}>
+        <div className="positioning-categories-div">
+            <div className="categories-wrapper">
+            {categories.map(category => ( 
+                <div className="category-block" key={category.id}>
+                    <button className="drug-category" onClick={() => toggleCategory(category.id)}>
+                        <img src={`/images/drugs/${category.name.replace(/ & | /g, "-")}.webp`} alt="" className="drug-image"/>
+                        <h2 className="category-name">{category.name}</h2>
+                    </button>
+                {openCategory === category.id && (
+                    <div className="symptoms-block">
+                    {category.symptoms.map(symptom => (
+                        <Link key={symptom.query} to={`/open-fda-drugs/${symptom.query}`} className="symptom-link">
                             {symptom.label}
                         </Link>
                     ))}
+                    </div>
+                )}
                 </div>
-            )} */
+            ))
+            }
+            </div>
+        </div>
+    )
+}
