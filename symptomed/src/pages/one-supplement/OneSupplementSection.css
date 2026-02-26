@@ -1,0 +1,19 @@
+.one-supplement-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.one-supplement-link-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.4rem;
+}
+
+@media (max-width: 1024px) {
+    .one-supplement-section {
+        width: 90%;
+        height: 68vh;
+        margin: auto;
+    }
+}

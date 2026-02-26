@@ -1,6 +1,5 @@
 import SupplementsCard from "./SupplementsCard"
 import "./SupplementsSection.css"
-import ButtonHomePage from "../../components/ButtonHomePage"
 import { useEffect, useState } from "react"
 import { Link } from "react-router"
 
@@ -16,16 +15,13 @@ export default function SupplementsSection() {
 
     return (
         <div className="all-supplements">
-            <div className="outer-supplements-wrapper">
-                <div className="supplements-section-wrapper">
-                    <section className="supplements-section">
-                        {supplements.map(s => (
-                            <SupplementsCard key={s.slug} supplement={s}/>
-                        ))}
-                    </section>
-                </div>
+            <div className="supplements-section-wrapper">
+                <section className="supplements-section">
+                    {supplements.map(s => (
+                        <SupplementsCard key={s.slug} supplement={s}/>
+                    ))}
+                </section>
             </div>
-            <ButtonHomePage />
         </div>
     )
 }

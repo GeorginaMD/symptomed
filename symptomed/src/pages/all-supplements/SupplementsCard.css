@@ -37,7 +37,6 @@
 
 @media (max-width:1024px) {
   .supplement-card {
-    border: 1px solid red;
     width: 40%;
   }
 }

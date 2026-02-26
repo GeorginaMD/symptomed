@@ -1,5 +1,4 @@
 import "./SupplementCardData.css"
-import { Link } from "react-router"
 
 export default function SupplementCardData({ supplement }) {
 
@@ -17,10 +16,6 @@ export default function SupplementCardData({ supplement }) {
                         <li className="supplement-data-li"><span>DOSE: </span>{supplement.dose.join(", ")}</li>
                         <li className="supplement-data-li"><span>SUGGESTIONS: </span>{supplement.suggestions.join(", ")}</li>
                     </ul>
-                </div>
-                <div className="one-supplement-link-buttons">
-                    <Link to="/all-supplements" className="home-page">Back</Link>
-                    <Link to="/" className="home-page">Home Page</Link>
                 </div>
             </div>
         </div>

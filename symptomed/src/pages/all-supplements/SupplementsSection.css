@@ -5,23 +5,17 @@
     justify-content: center;
 }
 
-.outer-supplements-wrapper {
+.supplements-section-wrapper {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     height: 68vh;
-    border-radius: 4rem;
+    border-radius: 3rem;
     margin: 1rem 7rem;
     box-shadow: 0.15em 0.15em 0.3em white,
                     -0.15em -0.15em 0.3em white,
                     0.15em 0.15em 1em rgb(162, 161, 184) inset,
                     -0.15em -0.15em 1em rgb(162, 161, 184) inset;
-}
-
-.supplements-section-wrapper {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
 }
 
 .supplements-section {
@@ -35,26 +29,25 @@
 }
 
 /*Styles for scrollbar*/
-.supplements-section-wrapper::-webkit-scrollbar {
+.supplements-section/* -wrapper */::-webkit-scrollbar {
     width: 15px;
 }
-.supplements-section-wrapper::-webkit-scrollbar-track {
+.supplements-section/* -wrapper */::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 5px;
 }
-.supplements-section-wrapper::-webkit-scrollbar-corner {
+.supplements-section/* -wrapper */::-webkit-scrollbar-corner {
     background: transparent;
 }
-.supplements-section-wrapper::-webkit-scrollbar-thumb {
+.supplements-section/* -wrapper */::-webkit-scrollbar-thumb {
     background: rgb(177, 174, 195);
     box-shadow: 0.06em 0.06em 0.6em white inset;
     border: 1px solid rgb(255, 254, 254);
-    border-radius: 8px;
-    
+    border-radius: 8px;  
 }
 
 @media (max-width: 1024px) {
-    .outer-supplements-wrapper {
+    .supplements-section-wrapper {
         height: 60vh;
         margin-top: 0.5rem;
          border-radius: 2rem;
@@ -62,14 +55,19 @@
 }
 
 @media (max-width: 768px) {
-    .outer-supplements-wrapper {
+    .supplements-section-wrapper {
         border-radius: 1.8rem;
     }
 }
 
 @media (max-width: 480px) {
-    .outer-supplements-wrapper {
+    .supplements-section-wrapper {
         width: 80%;
-        border-radius: 1.5rem;
+        height: 57vh;
+        border-radius: 1.3rem;
+        overflow: hidden;
+    }
+    .supplements-section {
+        overflow: auto
     }
 }

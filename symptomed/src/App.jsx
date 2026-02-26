@@ -17,6 +17,7 @@ import DemoLoginProfileSection from "./pages/user-dashboard-demo-login/DemoLogin
 import Footer from "./components/Footer"
 import DemoLoginForm from "./pages/demo-page/DemoLoginForm"
 import ProtectedRoute from "./components/ProtectedRoute";
+import AllSupplements from "./pages/all-supplements/AllSupplements";
 
 
 function Layout() {
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: "all-supplements",
-        element: <SupplementsSection />
+        element: <AllSupplements />
       },
       {
         path: "one-supplement/:slug",
