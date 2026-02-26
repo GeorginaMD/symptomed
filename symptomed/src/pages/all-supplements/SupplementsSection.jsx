@@ -16,12 +16,14 @@ export default function SupplementsSection() {
 
     return (
         <div className="all-supplements">
-            <div className="supplements-section-wrapper">
-                <section className="supplements-section">
-                    {supplements.map(s => (
-                        <SupplementsCard key={s.slug} supplement={s}/>
-                    ))}
-                </section>
+            <div className="outer-supplements-wrapper">
+                <div className="supplements-section-wrapper">
+                    <section className="supplements-section">
+                        {supplements.map(s => (
+                            <SupplementsCard key={s.slug} supplement={s}/>
+                        ))}
+                    </section>
+                </div>
             </div>
             <ButtonHomePage />
         </div>

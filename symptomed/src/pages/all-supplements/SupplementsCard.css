@@ -35,9 +35,25 @@
   text-shadow: 0.3px 0.3px 1px rgb(79, 76, 99);
 }
 
+@media (max-width:1024px) {
+  .supplement-card {
+    border: 1px solid red;
+    width: 40%;
+  }
+}
+
 @media (max-width:768px) {
+  .supplement-card {
+    width: 60%;
+  }
   .supplement-card-title {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .supplement-card {
+    width: 80%;
   }
 }
 

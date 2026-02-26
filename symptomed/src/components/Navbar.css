@@ -37,6 +37,9 @@
     .p-login-current-user {
         font-size: 1.2em;
     }
+    .h1 {
+        font-size: 3em;
+    }
 }
 
 @media (max-width: 768px) {
