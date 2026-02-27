@@ -1,3 +1,4 @@
+/* DESKTOP */
 .supplements-api-main-link {
     display: flex;
     flex-direction: column;
@@ -6,6 +7,7 @@
     /* width: 60%; */
     width: min(90%, 600px);
     margin: 2em 0;
+    border: 1px solid blue;
 }
 
 .h1-title-supplements {
@@ -14,6 +16,7 @@
     white-space: nowrap;
     color: rgb(44, 44, 44);
 }
+/* DESKTOP */
 /* STYLES FOR BUTTON */
 /* Button and text*/
 .supplements-link {
@@ -57,7 +60,10 @@
     scale: 0.95;
 } 
 
-/* BUTTON - TABLET (48rem / 768px) */
+/* TABLET  */
+.supplements-api-main-link {
+    margin: 0;
+}
 @media (max-width: 768px) {
 .supplements-link {
     margin: 0.6em;
@@ -99,21 +105,27 @@
 .supplements-link:hover{
     scale: 0.95;
 }
-}
-
-
-@media (max-width: 480px) {
-    .h1-title-supplements {
+.h1-title-supplements {
         white-space: normal;
         text-align: center;
-        font-size: clamp(1rem, 2vw, 1rem);
+        font-size: 1.5em;
+        
+        /* font-size: clamp(1.5rem, 2vw, 1.5rem); */
     }
 }
 
-@media (max-width: 710px) {
+/* MOBILE */
+@media (max-width: 426px) {
+    .supplements-api-main-link {
+        margin: 0;
+    }
     .h1-title-supplements {
         white-space: normal;
         text-align: center;
-        font-size: clamp(1.5rem, 2vw, 1.5rem);
+        font-size: 1.2em;
     }
-} 
+    .supplements-link {
+        font-size: 1.3rem;
+    }
+}
+

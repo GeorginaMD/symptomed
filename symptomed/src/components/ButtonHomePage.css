@@ -156,7 +156,7 @@
     margin: 0.4em;
     position: relative;
     display: flex;
-    width: 3em;
+    width: 3.3em;
     height: 0.8em;
     border-radius: 1.65em;
     align-items: center;
@@ -164,8 +164,9 @@
     cursor: pointer;
     color: #797979;
     font-family: "ZenLoop-Regular", sans-serif;
-    /* font-size: 1.5rem; */ /* Smaller for mobile */
+    font-size: 1.3rem; /* Smaller for mobile */
     transition: scale 0.3s ease-out;
+    text-wrap: nowrap;
 }
 
 .home-page:before {

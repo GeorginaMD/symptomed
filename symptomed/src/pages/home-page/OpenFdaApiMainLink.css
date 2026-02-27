@@ -1,3 +1,4 @@
+/* DESKTOP */
 .open-fda-main-link {
     display: flex;
     flex-direction: column;
@@ -6,7 +7,8 @@
     justify-content: center;
     width: min(90%, 600px);
     margin-top: 0.7rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
+    border: 1px solid red;
 }
 
 .titles {
@@ -32,7 +34,7 @@
     color: rgb(44, 44, 44);
 }
 
-/* STYLES FOR BUTTON - DESKTOP*/
+/* DESKTOP*/
 /* Button and text*/
 .symptoms-link {
     margin: 0.6em;
@@ -75,28 +77,12 @@
     scale: 0.95;
 }
 
-@media (max-width: 480px) {
-    /* allow wrapping on small screens: */
-    .h1-title-fda,
-    .h2-title-fda {
-        white-space: normal;
-        text-align: center;
-        font-size: clamp(1rem, 2vw, 1rem);
-    }
-} 
-
-@media (max-width: 710px) {
-    /* allow wrapping on small screens: */
-    .h1-title-fda,
-    .h2-title-fda {
-        white-space: normal;
-        text-align: center;
-        font-size: clamp(1.5rem, 2vw, 1.5rem);
-    }
-} 
-
-/* BUTTON - TABLET (48rem / 768px) */
+/* TABLET */
 @media (max-width: 768px) {
+    .open-fda-main-link {
+        margin: 0;
+        line-height: normal;
+    }
 /* Button and text*/
 .symptoms-link {
     margin: 0.6em;
@@ -138,10 +124,21 @@
 .symptoms-link:hover{
     scale: 0.95;
 }
+.h1-title-fda,
+.h2-title-fda {
+        white-space: normal;
+        text-align: center;
+        font-size: 1.5em;
+        
+        /* font-size: clamp(1.5rem, 2vw, 1.5rem); */
+}
 }
 
-/* BUTTON - MOBILE (rem / 425px) */
-@media (max-width: 425px) {
+/* MOBILE */
+@media (max-width: 426px) {
+    .open-fda-main-link {
+        margin-top: 0;
+    }
 /* Button and text*/
 .symptoms-link {
     margin: 0.6em;
@@ -155,7 +152,7 @@
     cursor: pointer;
     color: #797979;
     font-family: "ZenLoop-Regular", sans-serif;
-    font-size: 1rem;
+    font-size: 1.3em;
     transition: scale 0.3s ease-out;
 }
 /* Shadow */
@@ -183,4 +180,10 @@
 .symptoms-link:hover{
     scale: 0.95;
 } 
+.h1-title-fda,
+.h2-title-fda {
+        white-space: normal;
+        text-align: center;
+        font-size: 1.2em;
+}
 }
