@@ -36,3 +36,14 @@
     width: 30vw;
     margin-top: 0.5rem;
 }
+
+
+/* @media (max-width: 425px) {
+    .demo-login-profile-div-wrapper {
+        overflow-y: scroll;
+        overflow: hidden;
+    }
+    .demo-login-profile-section-wrapper {
+        overflow: auto
+    }
+} */

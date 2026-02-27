@@ -38,6 +38,7 @@
     border: none;
     border-radius: 2rem;
     text-align: center;
+    color: black;
 }
 
 .save-health-data, .save-profile-data {
@@ -68,15 +69,20 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+   
     .demo-login-profile-section-wrapper {
         height: 60vh;
+        overflow: hidden;
+        border-radius: 2.5rem;
     }
     .demo-login-profile-section {
+        overflow-y: scroll;
+        border-radius: 2.5rem;
         display: flex;
         flex-direction: column;
         height: 60vh;
-        overflow-y: scroll;
+        
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
     }
@@ -90,7 +96,7 @@
     }
     /*Styles for scrollbar*/
     .demo-login-profile-section::-webkit-scrollbar {
-        width: 15px;
+        width: 13px;
     }
     .demo-login-profile-section::-webkit-scrollbar-track {
         background: transparent;
@@ -107,7 +113,17 @@
 }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 425px) {
+    .demo-login-profile-section-wrapper {
+        border: 1px solid red;
+        height: 60vh;
+        width: 90%;
+        margin-top: 0.5rem;
+    }
+    .demo-login-profile-section {
+        width: 100%;
+        border: 1px solid black;
+    }
     .demo-dashboard-input-wrapper {
         width: 90%;
     }

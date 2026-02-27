@@ -137,7 +137,7 @@
 /* MOBILE */
 @media (max-width: 426px) {
     .open-fda-main-link {
-        margin-top: 0;
+        margin: 0 0 1rem 0;
     }
 /* Button and text*/
 .symptoms-link {

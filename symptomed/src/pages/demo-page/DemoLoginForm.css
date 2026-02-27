@@ -85,12 +85,14 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     .demo-form {
         width: 85vw;
-        margin: auto;
+        height: 60vh;
+        margin-top: 1.5rem;
     }
     .demo-p, .demo-email-label, .demo-password-label {
-        font-size: 1.1em;
+        font-size: 1.3em;
+        line-height: normal;
     }
 }

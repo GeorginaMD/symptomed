@@ -22,6 +22,7 @@
 
 .supplement-image {
   border-radius: 2rem;   
+  /* width: 90%; */
 }
 
 .supplement-image:hover {
@@ -37,22 +38,33 @@
 
 @media (max-width:1024px) {
   .supplement-card {
-    width: 40%;
+    /* width: 40%; */
   }
 }
 
 @media (max-width:768px) {
   .supplement-card {
-    width: 60%;
+    /* width: 60%; */
   }
   .supplement-card-title {
     font-size: 1.1rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .supplement-card {
+    width: 90%;
+  }
+  .supplement-link {
+    width: 90%;
+    padding: 0;
+  }
+  .supplement-image {
     width: 80%;
+    margin: 0;
+  }
+  .supplement-card-title {
+    font-size: 2em;
   }
 }
 

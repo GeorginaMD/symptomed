@@ -117,7 +117,7 @@
 /* MOBILE */
 @media (max-width: 426px) {
     .supplements-api-main-link {
-        margin: 0;
+        margin: 1rem 0 0 0;
     }
     .h1-title-supplements {
         white-space: normal;

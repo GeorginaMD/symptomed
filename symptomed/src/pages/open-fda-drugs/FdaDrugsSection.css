@@ -1,10 +1,19 @@
-.fda-drugs-section {
+.fda-drugs-section-main-wrapper {
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
     justify-content: center;
     align-items: center;
     height: 75vh;
+    width: 85vw;
+}
+
+.fda-drugs-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* height: 75vh; */
     border-radius: 10px;
     margin: 0.5em 0;
     font-family: "ZenLoop-Regular", sans-serif;
@@ -12,7 +21,7 @@
 }
 
 .title-recommended-drugs {
-    font-family: "ZenLoop-Italic", sans-serif;
+    font-family: "ZenLoop-Regular", sans-serif;
     font-size: 1.3em;
 }
 
@@ -20,10 +29,9 @@
     /* display: flex;
     flex-direction: row; */
     display: grid;
-    height: calc(70vh - 4rem);
+    /* height: calc(70vh - 4rem); */
     width: 85vw;
     justify-content: center;
-    /* text-align: center; */
     align-items: center;
     border-radius: 4em;
     margin: 0.7em 8em;
@@ -68,12 +76,48 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
+    .fda-drugs-section-main-wrapper{
+        margin: auto;
+        width: 100vw;
+    }
+    .fda-drugs-section {
+        width: 100vw;
+    }
+    .outer-fda-drugs-section-wrapper {
+        border-radius: 2rem;
+        overflow: hidden;
+    }
     .fda-drugs-section-wrapper {
+        /* overflow-y: scroll; */
         flex-direction: column;
-        width: 85vw;
+        width: 90vw;
+        height: 57vh;
         align-self: center;
         justify-content: center;
+        border-radius: 2rem;
+        margin: 0;
+        padding: 0.5rem 0.9em 0.5em 0.9em;
+    }
+    .title-recommended-drugs {
+        font-size: 0.8em;
+    }
+    .fda-drugs-section-wrapper::-webkit-scrollbar {
+        width: 10px;
+    }
+    .fda-drugs-section-wrapper::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+    }
+    .fda-drugs-section-wrapper::-webkit-scrollbar-thumb {
+        background: rgb(93, 92, 92);
+        box-shadow: 0.06em 0.06em 0.6em white inset;
+        border: 1px solid rgb(255, 254, 254);
+        border-radius: 5px;
+    }
+    .fda-drugs-section-wrapper::-webkit-scrollbar-thumb:horizontal {
+        background: transparent;
+        border-radius: 5px;
     }
 }
 

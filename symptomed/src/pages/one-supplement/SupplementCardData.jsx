@@ -2,12 +2,12 @@ import "./SupplementCardData.css"
 
 export default function SupplementCardData({ supplement }) {
 
-    if (!supplement) return <div>Loading...</div>
+    if (!supplement) return <div className="p-loading-supplement">Loading...</div>
 
     return (
         <div className="supplement-card-wrapper">
             <div className="supplement-card-data">
-                <img src={supplement.image} alt={supplement.name} className="supplement-image" style={{scale: "unset", boxShadow: "none" }}/>
+                <img src={supplement.image} alt={supplement.name} className="supplement-image-info" style={{scale: "unset", boxShadow: "none" }}/>
                 <div className="supplement-ul-wrapper">
                     <h1 className="supplement-name-h1">{supplement.name}</h1>
                     <ul className="supplement-data-ul">

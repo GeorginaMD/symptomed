@@ -64,11 +64,12 @@
 }
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 425px) {
     .footer-wrapper {
-       
+       display: flex;
+       flex-direction: column-reverse;
     }
-    .medical-disclaimer, .footer-links {
-    
+    .medical-disclaimer, .footer-links  {
+        font-size: 1.3em;
     }
-} */
+}

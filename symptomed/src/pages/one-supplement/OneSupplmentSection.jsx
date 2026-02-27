@@ -18,8 +18,8 @@ export default function OneSupplementSection() {
         <section className="one-supplement-section">
             <SupplementCardData supplement={supplement} />
             <div className="one-supplement-link-buttons">
-                    <Link to="/all-supplements" className="home-page">Back</Link>
-                    <Link to="/" className="home-page">Home Page</Link>
+                <Link to="/all-supplements" className="home-page">Back</Link>
+                <Link to="/" className="home-page">Home Page</Link>
             </div>
         </section>
         

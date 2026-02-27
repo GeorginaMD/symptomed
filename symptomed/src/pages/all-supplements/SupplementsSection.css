@@ -29,17 +29,17 @@
 }
 
 /*Styles for scrollbar*/
-.supplements-section/* -wrapper */::-webkit-scrollbar {
+.supplements-section::-webkit-scrollbar {
     width: 15px;
 }
-.supplements-section/* -wrapper */::-webkit-scrollbar-track {
+.supplements-section::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 5px;
 }
-.supplements-section/* -wrapper */::-webkit-scrollbar-corner {
+.supplements-section::-webkit-scrollbar-corner {
     background: transparent;
 }
-.supplements-section/* -wrapper */::-webkit-scrollbar-thumb {
+.supplements-section::-webkit-scrollbar-thumb {
     background: rgb(177, 174, 195);
     box-shadow: 0.06em 0.06em 0.6em white inset;
     border: 1px solid rgb(255, 254, 254);
@@ -50,7 +50,7 @@
     .supplements-section-wrapper {
         height: 60vh;
         margin-top: 0.5rem;
-         border-radius: 2rem;
+        border-radius: 2rem;
     }
 }
 
@@ -60,7 +60,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     .supplements-section-wrapper {
         width: 80%;
         height: 57vh;
@@ -69,5 +69,8 @@
     }
     .supplements-section {
         overflow: auto
+    }
+    .supplements-section::-webkit-scrollbar-thumb {
+        border-radius: 5px;
     }
 }
