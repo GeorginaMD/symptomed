@@ -36,6 +36,9 @@
 }
 
 @media (max-width: 480px) {
+    .open-fda-categories-wrapper {
+       
+    }
     .open-fda-categories-section {
         height: calc(66vh - 2rem);
         margin: 0.6em 4em;

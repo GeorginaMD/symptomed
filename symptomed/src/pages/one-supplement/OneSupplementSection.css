@@ -17,3 +17,9 @@
         margin: auto;
     }
 }
+
+@media (max-width: 425px) {
+    .one-supplement-section {
+        margin-bottom: 0.5rem;
+    }
+}

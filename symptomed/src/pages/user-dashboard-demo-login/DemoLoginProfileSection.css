@@ -37,7 +37,9 @@
     margin-top: 0.5rem;
 }
 
-
+.demo-login-profile-div-wrapper{
+    margin-bottom: 0.5rem;
+}
 /* @media (max-width: 425px) {
     .demo-login-profile-div-wrapper {
         overflow-y: scroll;

@@ -115,14 +115,12 @@
 
 @media (max-width: 425px) {
     .demo-login-profile-section-wrapper {
-        border: 1px solid red;
         height: 60vh;
         width: 90%;
         margin-top: 0.5rem;
     }
     .demo-login-profile-section {
         width: 100%;
-        border: 1px solid black;
     }
     .demo-dashboard-input-wrapper {
         width: 90%;
