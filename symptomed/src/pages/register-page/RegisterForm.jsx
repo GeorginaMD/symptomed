@@ -57,15 +57,15 @@ export default function RegisterForm() {
     return (
         <div className="register-form-wrapper">
             <form className="register-form" onSubmit={handleSubmit}>
-                <p className="register-p">Please fill your register data:</p>
                 <div className="register-input-wrapper">
+                    <p className="register-p">Please fill your register data:</p>
                         <label htmlFor="register-email" className="register-email-label">Email:
                             <input type="email" id="register-email" value={email} className="register-email" onChange={(e) => {setEmail(e.target.value); setErrors([]); }} />
                         </label>
                         <label htmlFor="register-password" className="register-password-label">Password:
                             <input type="password" id="register-password" value={password} className="register-password" onChange={(e) => { setPassword(e.target.value); setErrors([]); }}/>
                         </label>
-                    </div>
+                </div>
 
                     {errors.length > 0 && (
                         <div>

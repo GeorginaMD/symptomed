@@ -78,3 +78,72 @@
         height: 55vh;
     }
 }
+
+@media (max-width: 425px) {
+    .register-form {
+        overflow: hidden;
+    }
+    .register-input-wrapper {
+        overflow-y: scroll;
+    }
+    .register-p {
+        font-size: 1.3em;
+        margin: 0;
+    }
+    .register-form {
+        border-radius: 1.5rem;
+        height: 52vh;
+    }
+    .register-email-label, .register-password-label {
+        margin: 0.1rem;
+        padding: 0.1rem;
+        font-size: 1.3em;
+    }
+    .register-email, .register-password {
+        font-size: 0.8em;
+        line-height: normal;
+    }
+
+    /*Styles for scrollbar*/
+    .register-input-wrapper::-webkit-scrollbar {
+        width: 15px;
+    }
+    .register-input-wrapper::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+    .register-input-wrapper::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+    .register-input-wrapper::-webkit-scrollbar-thumb {
+        background: rgb(177, 174, 195);
+        box-shadow: 0.06em 0.06em 0.6em white inset;
+        border: 1px solid rgb(255, 254, 254);
+        border-radius: 8px;  
+    }
+    /*Scrolling for input validation*/
+    .ul-validation-error {
+        height: 4rem;
+        overflow: scroll;
+        width: 96%;
+        margin-left: 0.4rem;
+    }
+    /*Styles for scrollbar*/
+    .ul-validation-error::-webkit-scrollbar {
+        width: 15px;
+    }
+    .ul-validation-error::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 5px;
+    }
+    .ul-validation-error::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+    .ul-validation-error::-webkit-scrollbar-thumb {
+        background: rgb(177, 174, 195);
+        box-shadow: 0.06em 0.06em 0.6em white inset;
+        border: 1px solid rgb(255, 254, 254);
+        border-radius: 8px;  
+    }
+
+}
