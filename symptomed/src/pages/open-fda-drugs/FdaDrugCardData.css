@@ -15,7 +15,6 @@
     margin: 0.5em;
     overflow: scroll;
     text-align: start;
-    border: 1px solid hotpink;
 }
 
 .drug-card-data {
@@ -80,10 +79,10 @@
     width: 13px;
 }
 .drug-card::-webkit-scrollbar-thumb {
-    background: rgb(201, 200, 200);
-    box-shadow: 0.06em 0.06em 0.06em white inset;
-    border: 1px solid rgb(255, 254, 254);
-    border-radius: 6px;
+    background:  rgb(155, 152, 168);
+        box-shadow: 0.06em 0.06em 0.6em white inset;
+        border: 1px solid rgb(255, 254, 254);
+        border-radius: 5px;
 }
 }
 

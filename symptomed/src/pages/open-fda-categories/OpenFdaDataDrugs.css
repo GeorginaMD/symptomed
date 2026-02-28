@@ -1,4 +1,14 @@
+.fetching-data-links {
+
+}
+
 .loading-drugs, .error-drugs {
     font-family: "ZenLoop-Regular", sans-serif;
     font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+    .fetching-data-links {
+        height: 60vh;
+    }
 }
