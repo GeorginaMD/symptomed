@@ -35,13 +35,18 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     .open-fda-categories-wrapper {
-       
+        width: 75%;
+        height: 60vh;
+        margin: auto;
+        border-radius: 1.3rem;
     }
     .open-fda-categories-section {
-        height: calc(66vh - 2rem);
-        margin: 0.6em 4em;
+        margin: 0;
+        
+        width: 90%;
+        height: 50vh;
         border-radius: 2rem;
     }
 }

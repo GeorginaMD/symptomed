@@ -58,6 +58,7 @@
         width: 85vw;
         height: 60vh;
         margin: auto;
+        margin-top: 0.5rem;
         border-radius: 4rem;
     }
 }

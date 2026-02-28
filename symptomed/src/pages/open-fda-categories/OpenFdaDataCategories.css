@@ -168,17 +168,15 @@
     }
     .categories-wrapper {
         display: grid;
-        height: 60vh;
         overflow-y: scroll;
         border-radius: 2rem;
-        place-items: center;
+        /* place-items: center; */
     }
     .category-block {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 55vw;
-        padding: 0;
+        justify-content: flex-start;
+        width: 80%;
         
     }
     .drug-category{
@@ -186,7 +184,7 @@
         width: 90%;
     }
     .category-name {
-        font-size: 1.3em;
+        font-size: 1.1em;
         text-wrap: nowrap;
         position: static;
         margin-top: 0.5rem;
@@ -198,6 +196,9 @@
     .symptoms-block {
         display: flex;
         flex-direction: row;
+    }
+    .drug-image {
+        width: 80%;
     }
     .categories-wrapper::-webkit-scrollbar {
         width: 15px;
