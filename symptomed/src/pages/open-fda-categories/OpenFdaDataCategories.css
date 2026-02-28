@@ -170,6 +170,7 @@
         display: grid;
         overflow-y: scroll;
         border-radius: 2rem;
+        margin-top: 0.6rem;
         /* place-items: center; */
     }
     .category-block {
