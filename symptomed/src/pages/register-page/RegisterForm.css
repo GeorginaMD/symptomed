@@ -130,7 +130,7 @@
     }
     /*Styles for scrollbar*/
     .ul-validation-error::-webkit-scrollbar {
-        width: 15px;
+        width: 8px;
     }
     .ul-validation-error::-webkit-scrollbar-track {
         background: transparent;

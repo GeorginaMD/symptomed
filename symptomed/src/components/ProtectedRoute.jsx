@@ -7,7 +7,7 @@ const ProtectedRoute = () => {
   if (loading) return <p className="p-loading-p-routes">Loading routes...</p>;
 
   if (!isAuthenticated) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/login-page" replace />;
   }
 
   return <Outlet />;

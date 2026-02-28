@@ -60,6 +60,10 @@
     margin: 0 1.1rem;
 }
 
+.login-form-error {
+    
+}
+
 @media (max-width: 768px) {
     .login-form-wrapper {
         height: 57vh;
