@@ -1,9 +1,12 @@
 .outer-drug-card-wrapper {
-
 }
 
 .drug-card-wrapper {
-
+    height: 21em;
+    width: 75vw;
+    border-radius: 2rem;
+    margin: auto;   
+    overflow: hidden;
 }
 
 .drug-card {
@@ -12,7 +15,6 @@
     border-radius: 2rem;
     height: 20em;
     width: 75vw;
-    margin: 0.5em;
     overflow: scroll;
     text-align: start;
 }
@@ -34,7 +36,7 @@
 
 /*Styles for scrollbar*/
 .drug-card::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
 .drug-card::-webkit-scrollbar-track {
     background: transparent;
@@ -44,8 +46,8 @@
     background: transparent;
 }
 .drug-card::-webkit-scrollbar-thumb {
-    background: rgb(184, 184, 184);
-    box-shadow: 0.05em 0.05em 0.05em white inset;
+    background: rgb(168, 162, 186);
+    box-shadow: 0.06em 0.06em 0.6em white inset;
     border: 1px solid rgb(255, 254, 254);
     border-radius: 8px;
 }

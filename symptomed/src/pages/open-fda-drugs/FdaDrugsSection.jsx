@@ -5,7 +5,7 @@ import ButtonHomePage from "../../components/ButtonHomePage"
 export default function FdaDrugsSection({drugs}) {
     return (
         <div className="fda-drugs-section-main-wrapper">
-            <section className="fda-drugs-section">
+            <div className="fda-drugs-section">
                 <p className="title-recommended-drugs">This is a list of 10 drugs that can be used with your {/* {category.symptoms.label} */} symptoms:</p>
                 <div className="outer-fda-drugs-section-wrapper">
                     <div className="fda-drugs-section-wrapper">
@@ -15,7 +15,7 @@ export default function FdaDrugsSection({drugs}) {
                         {drugs.length === 0 && <p>No results found.</p>}
                     </div>
                 </div>
-            </section>
+            </div>
             <ButtonHomePage />
         </div>
     )
