@@ -95,8 +95,13 @@ function App() {
   if (loading) { 
     return (
       <div className="server-loading">
-        <p className="p-server-loading">Connecting to server...</p>
-        <p className="p-server-loading">This may take ~ 50-60 seconds.</p>
+        <img src="/images/capsule.webp" alt="Loading..." className="capsule-spinner" />
+        <div className="loading-messages">
+          <p className="p-server-loading">Connecting to server...</p>
+          <p className="p-server-loading">This may take ~ 50-60 seconds...</p>
+          <p className="p-server-loading">Thanks for your patience...</p>
+          <p className="p-server-loading">Almost there...</p>
+        </div>
       </div>
     );
   }

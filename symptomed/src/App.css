@@ -2,15 +2,52 @@
   isolation: isolate;
 }
 
+/*LOADING SPINNER:*/
 .server-loading {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  gap: 1.5rem;
+}
+
+.capsule-spinner {
+  width: 80px;
+  height: 80px;
+  animation: spin 1.8s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.loading-messages {
+  position: relative;
+  height: 1.5rem;
+  width: 100%;
 }
 
 .p-server-loading {
   font-family: "ZenLoop-Regular", sans-serif;
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+  animation: showMsg 20s infinite;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.p-server-loading:nth-child(1) { animation-delay: 0s; }
+.p-server-loading:nth-child(2) { animation-delay: 5s; }
+.p-server-loading:nth-child(3) { animation-delay: 10s; }
+.p-server-loading:nth-child(4) { animation-delay: 15s; }
+
+@keyframes showMsg {
+  0%  { opacity: 0; }
+  2%, 23% { opacity: 1 }
+  25%, 100% { opacity: 0; }
 }
