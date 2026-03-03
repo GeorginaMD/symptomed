@@ -44,7 +44,7 @@
 
 @media (max-width:768px) {
   .supplement-card {
-    /* width: 60%; */
+    width: 60%;
   }
   .supplement-card-title {
     font-size: 1.1rem;

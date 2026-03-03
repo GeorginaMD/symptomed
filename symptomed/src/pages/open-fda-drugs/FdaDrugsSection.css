@@ -68,6 +68,7 @@
     box-shadow: 0.06em 0.06em 0.6em white inset;
     border: 1px solid rgb(255, 254, 254);
     border-radius: 8px;
+    height: 50px;
 }
 .fda-drugs-section-wrapper::-webkit-scrollbar-thumb:horizontal {
     background: transparent;
@@ -77,13 +78,16 @@
 @media (max-width: 768px) {
     .fda-drugs-section {
         align-items: center;
+        margin: 0;
     }
-
     .fda-drugs-section-wrapper {
         flex-direction: column;
-        height: calc(70vh - 6rem);
-        width: calc(85vw - 4rem);
+        height: calc(70vh - 7rem);
+        width: calc(85vw - 1rem);
         align-items: center;
+    }
+    .title-recommended-drugs {
+        font-size: 1em;
     }
 }
 
